@@ -8,6 +8,7 @@ module.exports = {
       backgroundImage: {
         'full-screen': "url('../assets/full-screen.png')",
         'footer-texture': "url('/img/footer-texture.png')",
+        'custom-gradient': 'linear-gradient(-90deg, #F99C04 0%, #000000 100%)',
       },
       colors: {
         customOrange: 'rgb(249, 156, 4)',
