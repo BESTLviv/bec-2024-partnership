@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         customOrange: 'rgb(249, 156, 4)',
+        customBrown: 'rgb(67, 44, 9)',
       },
     },
     

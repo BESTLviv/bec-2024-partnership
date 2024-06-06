@@ -2,7 +2,7 @@ import Title from "./Title";
 import Description from "./Description";
 export default function WhatBec() {
     return (
-        <div className=" text-white mb-[60px]">
+        <div className=" text-white mb-[60px] px-[50px]">
             <Title>ЩО ТАКЕ BEC?</Title>
             <Description className="mb-[30px]">Це змагання, що запрошують молодих інженерів застосувати свої знання та навички для вирішення реальних завдань в одній з двох категорій
                 — Case Study (CS) та Team Design (TD).</Description>

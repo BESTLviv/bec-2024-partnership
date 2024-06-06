@@ -17,7 +17,7 @@ export default function PhotoSlider({ ...props }) {
     };
 
     return (
-        <Slider {...settings} className="mb-[165px]">
+        <Slider {...settings} className="mb-[165px] px-[50px]">
             <div>
                 <img src={slider1} alt="" />
             </div>
