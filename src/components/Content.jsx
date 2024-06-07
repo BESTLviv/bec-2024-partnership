@@ -5,6 +5,7 @@ import WhatBec from "./WhatBec";
 import TdVsCs from "./TdVsCs/TdVsCs";
 import Opportunities from "./Opportunities/Opportunities";
 import Statistics from "./Statistics";
+import Portrait from "./Portrait";
 export default function Content() {
     return (
         <div className="flex flex-col bg-black  pt-[160px]">
@@ -13,6 +14,8 @@ export default function Content() {
             <TdVsCs></TdVsCs>
             <Opportunities></Opportunities>
             <Statistics></Statistics>
+            <Portrait></Portrait>
+
         </div>
     );
 }
