@@ -6,6 +6,7 @@ import TdVsCs from "./TdVsCs/TdVsCs";
 import Opportunities from "./Opportunities/Opportunities";
 import Statistics from "./Statistics";
 import Portrait from "./Portrait";
+import Propositions from "./Propositions/Propositions";
 export default function Content() {
     return (
         <div className="flex flex-col bg-black  pt-[160px]">
@@ -15,6 +16,7 @@ export default function Content() {
             <Opportunities></Opportunities>
             <Statistics></Statistics>
             <Portrait></Portrait>
+            <Propositions></Propositions>
 
         </div>
     );

@@ -2,6 +2,7 @@ import Title from "./Title";
 import { SPECIALITY } from "/src/data.js";
 import portrait1 from '/src/assets/portrait1.png'
 import portrait2 from '/src/assets/portrait2.png'
+import Points from "./Points";
 export default function Portrait() {
     return (
         <div className="text-white mx-[25px] mb-[127px]">
@@ -9,10 +10,7 @@ export default function Portrait() {
             <p className="text-[22px] leading-7 mb-[9px]">Студент</p>
             <p className="text-[28px] mb-[13px]">Вік: 17-21</p>
             <p className="text-[28px] mb-[14px]">Спеціальності:</p>
-            <ol className=" mb-[60px]">
-                {SPECIALITY.map((item, index) => <li className=" relative   before: content-[''] before:block before:w-[6px] before:h-[6px] before:bg-orange-400 before:absolute pl-[15px] before:left-0 before:top-[40%] mb-[10px]  font-medium text-[16px]" key={index}>{item.text}</li>)}
-            </ol>
-
+            <Points data={SPECIALITY} className=" mb-[60px]"></Points>
             <div className=" flex flex-col mx-5">
                 <div className=" mb-5 relative w-[298px] h-[205px] ">
                     <img className=" absolute object-cover h-full w-full" src={portrait1} alt="" />
