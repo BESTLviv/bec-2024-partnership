@@ -18,11 +18,11 @@ export default function Partners() {
 
     return (
         <div className="text-white px-[15px] mb-[150px]">
-            <Title className="mb-[35px]">НАС ПІДТРИМУЮТЬ</Title>
+            <Title className=" text-center px-[40px] mb-[35px]">НАС ПІДТРИМУЮТЬ</Title>
             {chunkedPartners.map((row, rowIndex) => (
                 <div key={rowIndex} className="flex justify-center  mb-10">
                     {row.map((partner, index) => (
-                        <div key={index} className={`flex items-center justify-center ${row.length === 3 ? 'mr-[50px]' : 'mr-[40px]'}  ${index === row.length - 1 ? 'mr-0' : ''}`}>
+                        <div key={index} className={`flex items-center justify-center ${row.length === 3 ? 'mr-[50px]' : 'mr-[40px]'}  ${index === row.length - 1 ? 'mr-[0px]' : ''}`}>
                             <img src={partner.image} alt={`Partner ${index + 1}`} className="max-w-full max-h-full object-contain" />
                         </div>
                     ))}

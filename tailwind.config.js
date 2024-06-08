@@ -12,8 +12,13 @@ module.exports = {
         'portrait1': "url('../assets/portrait1.png')",
         'portrait2': "url('../assets/full-screen.png')",
         'checked': "url('../assets/info.svg'), rgb(255, 255, 255) ",
+        "lines" : "url('/src/assets/lines.svg')",
         'proposition-gradient': 'linear-gradient(90deg, rgb(67, 67, 67), rgb(0, 0, 0) 100%)',
+        "ellipse" : 'radial-gradient(50% 50% at 50% 50%, rgba(245, 160, 32, 0.3) 18%, rgba(0, 0, 0, 0.3) 100%)',
         'add-map': "url('/src/assets/addMap.svg')",
+      },
+      filter: {
+        'blur-200': 'blur(200px)',
       },
       backgroundColor: {
         'proposition-button': 'rgb(38, 37, 37)',
@@ -36,9 +41,10 @@ module.exports = {
       header: ['42px', '53px']
     },
     fontFamily: {
-      daysOne: ['Days One'], 
+      daysOne: ['DaysOne'], 
       jura: ['Jura'], 
-      workSans: ['Work Sans'], 
+      workSans: ['WorkSans'], 
+      workSansB: ['WorkSansB'], 
     }
   },
   plugins: [],

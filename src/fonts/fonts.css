@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'DaysOne';
+    src: url('/src/fonts/DaysOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('/src/fonts/Jura.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WorkSans';
+    src: url('/src/fonts/WorkSans-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSansB';
+    src: url('/src/fonts/WorkSans-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

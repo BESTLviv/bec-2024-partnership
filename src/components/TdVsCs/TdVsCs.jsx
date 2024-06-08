@@ -3,10 +3,14 @@ import Subject from "./Subject";
 import { SUBJECTS } from "/src/data.js";
 export default function TdVsCs() {
     return (
-        <div className=" text-white mb-[60px] px-[50px] ">
-            <Title>CASE STUDY VS TEAM DESIGN</Title>
-            <div className="bg-orange-400 p-5 flex-row">
-                {SUBJECTS.map((item, index) => <Subject key={index} subject={item}></Subject>)}
+        <div className=" bg-black  relative text-white mb-[60px] px-[50px] ">
+            {/* <div className=" absolute z-30 bg-lines w-[2770px] h-[2400px] -left-[1300px] transform rotate-[-27.55deg]"> */}
+            {/* <img className=" absolute z-30  w-[2000px] h-[2000px] transform rotate-[-27.55deg]  -top-20 -left-[200px]" src="/src/assets/lines.svg" alt="" /> */}
+            {/* </div> */}
+
+            <Title className="text-center">CASE STUDY VS TEAM DESIGN</Title>
+            <div className=" bg-black p-5 flex-row relative z-30">
+                {SUBJECTS.map((item, index) => <Subject key={index} subject={item} isLast={index === SUBJECTS.length - 1}></Subject>)}
             </div>
 
         </div>

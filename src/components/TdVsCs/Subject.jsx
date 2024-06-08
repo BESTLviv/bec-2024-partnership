@@ -1,7 +1,7 @@
 import Explain from "./Explain";
-export default function Subject({ subject }) {
+export default function Subject({ subject, isLast }) {
     return (
-        <ol className="">
+        <ol className={`relative z-30 ${isLast ? '' : 'mb-[60px]'}`}>
             {subject.info.map((item, index) => (
                 <Explain key={index} word={item.word}>{item.description}</Explain>
             ))}
