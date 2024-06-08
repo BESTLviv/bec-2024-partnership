@@ -11,7 +11,7 @@ export default function Portrait() {
             <p className="text-[28px] mb-[13px]">Вік: 17-21</p>
             <p className="text-[28px] mb-[14px]">Спеціальності:</p>
             <Points data={SPECIALITY} className=" mb-[60px]"></Points>
-            <div className=" flex flex-col mx-5">
+            <div className=" flex flex-col  items-center mx-5">
                 <div className=" mb-5 relative w-[298px] h-[205px] ">
                     <img className=" absolute object-cover h-full w-full" src={portrait1} alt="" />
                 </div>

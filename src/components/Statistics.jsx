@@ -19,7 +19,7 @@ export default function Statistics() {
                 </div>
                 <div className="pb-[40px]">
                     <p className="ml-5 mb-5">Учасники: 44</p>
-                    <div className="h-[83px] w-full bg-custom-gradient"></div>
+                    <div className="h-[83px] w-[65%] bg-custom-gradient"></div>
                 </div>
             </div>
         </div>

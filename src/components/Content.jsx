@@ -7,6 +7,8 @@ import Opportunities from "./Opportunities/Opportunities";
 import Statistics from "./Statistics";
 import Portrait from "./Portrait";
 import Propositions from "./Propositions/Propositions";
+import Basket from "./Basket/Basket";
+import Partners from "./Partners";
 export default function Content() {
     return (
         <div className="flex flex-col bg-black  pt-[160px]">
@@ -17,7 +19,8 @@ export default function Content() {
             <Statistics></Statistics>
             <Portrait></Portrait>
             <Propositions></Propositions>
-
+            <Basket></Basket>
+            <Partners></Partners>
         </div>
     );
 }
