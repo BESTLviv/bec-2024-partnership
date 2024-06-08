@@ -9,6 +9,8 @@ import Portrait from "./Portrait";
 import Propositions from "./Propositions/Propositions";
 import Basket from "./Basket/Basket";
 import Partners from "./Partners";
+import Aboutbest from "./AboutBest";
+import Contacts from "./Contacts/Contacts";
 export default function Content() {
     return (
         <div className="flex flex-col bg-black  pt-[160px]">
@@ -21,6 +23,8 @@ export default function Content() {
             <Propositions></Propositions>
             <Basket></Basket>
             <Partners></Partners>
+            <Aboutbest></Aboutbest>
+            <Contacts></Contacts>
         </div>
     );
 }

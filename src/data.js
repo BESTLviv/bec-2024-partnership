@@ -8,6 +8,7 @@ import subject2 from "/src/assets/subject2.jpg"
 import instagram from "/src/assets/instagram.svg"
 import telegram from "/src/assets/telegram.svg"
 import linkedin from "/src/assets/linkedin.svg"
+import bobik from "/src/assets/bobik.jpg"
 
 export const SUBJECTS = [
     {
@@ -246,6 +247,34 @@ export const ADDITIONAL_PROPOSITIONS = [
     {
         text: "Завдання для учасників від компанії на Тeam Design",
         price: "250$",
+    },
+  
+]
+
+export const CONTACTS = [
+    {
+        image: bobik,
+        name: "Ярощук Катерина",
+        position: "відповідальна за корпоративні зв'язки",
+        number: "+380686382823",
+        email: "yaroshchuuk@gmail.com"
+
+    },
+    {
+        image: bobik,
+        name: "Явір Руслан",
+        position: "головний організатор",
+        number: "+380979517976",
+        email: "ruslanyavirs@gmail.com"
+
+    },
+    {
+        image: bobik,
+        name: "Медзин Анна",
+        position: "відповідальна за корпоративні зв'язки",
+        number: "+380960625230",
+        email: "medzyn.anna@gmail.com"
+
     },
   
 ]

@@ -13,6 +13,7 @@ module.exports = {
         'portrait2': "url('../assets/full-screen.png')",
         'checked': "url('../assets/info.svg'), rgb(255, 255, 255) ",
         'proposition-gradient': 'linear-gradient(90deg, rgb(67, 67, 67), rgb(0, 0, 0) 100%)',
+        'add-map': "url('/src/assets/addMap.svg')",
       },
       backgroundColor: {
         'proposition-button': 'rgb(38, 37, 37)',

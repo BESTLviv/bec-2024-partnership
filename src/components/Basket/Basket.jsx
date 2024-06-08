@@ -30,10 +30,6 @@ export default function Basket() {
 
             </div>
             <div className="text-white mx-[50px] flex flex-col mb-[30px] border-2 border-white p-[30px] mb-[30px]">
-                <div className="mb-3 flex">
-                    <input className="mr-2" type="radio" name="" id="" />
-                    <p className=" text-partner ">Постійний партнер</p>
-                </div>
                 <div>
                     <input className=" pl-[22px] mb-3    h-[48px]  w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" id="" placeholder="Введіть пошту" />
                 </div>
