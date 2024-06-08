@@ -11,6 +11,7 @@ import Basket from "./Basket/Basket";
 import Partners from "./Partners";
 import Aboutbest from "./AboutBest";
 import Contacts from "./Contacts/Contacts";
+import Footer from "./Footer";
 export default function Content() {
     return (
         <div className="flex flex-col bg-black  pt-[160px]">
@@ -25,6 +26,7 @@ export default function Content() {
             <Partners></Partners>
             <Aboutbest></Aboutbest>
             <Contacts></Contacts>
+            <Footer></Footer>
         </div>
     );
 }

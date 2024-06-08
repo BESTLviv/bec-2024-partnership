@@ -278,3 +278,63 @@ export const CONTACTS = [
     },
   
 ]
+
+import battery from "/src/assets/partners/battery.svg"
+import dataArt from "/src/assets/partners/dataArt.svg"
+import dialog from "/src/assets/partners/dialog.svg"
+import donatello from "/src/assets/partners/donatello.svg"
+import ecoSfera from "/src/assets/partners/ecoSfera.svg"
+import fujikura from "/src/assets/partners/fujikura.svg"
+import horihoviy from "/src/assets/partners/horihoviyGay.svg"
+import lukas from "/src/assets/partners/lukas.svg"
+import rozkvit from "/src/assets/partners/rozkvit.svg"
+import sigma from "/src/assets/partners/sigma.svg"
+import squad from "/src/assets/partners/squad.svg"
+import sweetTv from "/src/assets/partners/sweetTv.svg"
+import warbirds from "/src/assets/partners/warbirds.svg"
+
+
+
+export const PARTNERS = [
+    {
+        image: warbirds,
+    },
+    {
+        image: fujikura,
+    },
+    {
+        image: donatello,
+    },
+    {
+        image: sweetTv,
+    },
+    {
+        image: ecoSfera,
+    },
+    {
+        image: lukas,
+    },
+    {
+        image: horihoviy,
+    },
+    {
+        image: sigma,
+    },  
+    {
+        image: dataArt,
+    },  
+    {
+        image: battery,
+    },  
+    {
+        image: rozkvit,
+    },  
+    {
+        image: squad,
+    },  
+    {
+        image: dialog,
+    },  
+   
+  
+]
