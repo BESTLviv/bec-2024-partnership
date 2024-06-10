@@ -5,3 +5,264 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.full-input{
+    font-size: calc(12px + 12 * (100vw - 320px) / 1120);
+    text-wrap: nowrap;
+
+}
+#header{
+    padding-left: calc(20px + 30 * (100vw - 320px) / 1120);
+    padding-right: calc(20px + 30 * (100vw - 320px) / 1120);
+    padding-top: calc(17px + 20 * (100vw - 320px) / 1120);
+    padding-bottom: calc(17px + 20 * (100vw - 320px) / 1120);
+}
+#header div button{
+    margin-right: calc(70px + 33 * (100vw - 320px) / 1120);
+}
+#header div div{
+    margin-right: calc(100px + 33 * (100vw - 320px) / 1120);
+}
+
+#full-screen{
+    
+}
+#info h2{
+    font-size: calc(36px + 34 * (100vw - 320px) / 1120);
+    width: calc(290px + 410 * (100vw - 320px) / 1120);
+    line-height: calc(47px + 48 * (100vw - 320px) / 1120);
+    margin-bottom: calc(10px + 21 * (100vw - 320px) / 1120);
+}
+#info h3{
+    font-size: calc(27px + 19 * (100vw - 320px) / 1120);
+    margin-bottom: calc(63px + 19 * (100vw - 320px) / 1120);
+}
+#info  button{
+    width: calc(285px + 70 * (100vw - 320px) / 1120);
+    height: calc(41px + 36 * (100vw - 320px) / 1120);
+}
+
+.background-fill {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 90.86%),
+                      linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-blend-mode: multiply;
+  }
+
+  .bec-image { 
+    width: calc(420px + 320 * (100vw - 320px) / 1120);
+    height: calc(440px + 280 * (100vw - 320px) / 1120);
+  }
+
+  #opportunities{
+    padding-left: calc(25px + 115 * (100vw - 320px) / 1120);
+    padding-right: calc(25px + 115 * (100vw - 320px) / 1120);
+  }
+  .proposition__title {
+    font-size: calc(20px + 16 * (100vw - 320px) / 1120);
+  }
+
+  #proposition div{
+    font-size: calc(8px + 6 * (100vw - 320px) / 1120);
+  }
+
+  #proposition ol li{
+    font-size: calc(12px + 8 * (100vw - 320px) / 1120);
+  }
+
+  #proposition button:nth-of-type(1){
+    width: calc(20px + 12 * (100vw - 320px) / 1120);
+    height: calc(20px + 12 * (100vw - 320px) / 1120);
+    font-size: calc(14px + 5 * (100vw - 320px) / 1120);
+  }
+
+  #proposition button:nth-of-type(2){
+    font-size: calc(20px + 12 * (100vw - 320px) / 1120);
+    width: calc(112px + 68 * (100vw - 320px) / 1120);
+    height: calc(42px + 12 * (100vw - 320px) / 1120);
+  }
+  #propositions div:nth-of-type(3){
+    font-size: calc(8px + 12 * (100vw - 320px) / 1120);
+    
+  }
+
+  .slide-content {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-image {
+    width: calc(298px + 319 * (100vw - 320px) / 1120);
+    height: calc(205px + 424 * (100vw - 320px) / 1120);
+}
+
+.right-image {
+    width: 48%; /* Ширина зображень справа */
+    height: auto;
+}
+
+.swiper-container{
+    width: 1000px;
+    height: 500px;
+}
+
+.custom-checkbox {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: 2px solid white;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .custom-checkbox:checked {
+    background-color: white;
+  }
+  
+  .custom-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 16px;
+    height: 7px;
+    border: solid rgb(38, 37, 37);
+    border-width: 0 0 2px 3px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  } 
+
+  .clicked{
+    border: 2px solid rgb(245, 160, 32);
+  }
+
+  .info-propo{
+    font-size: calc(20px + 16 * (100vw - 320px) / 1120);
+    margin-bottom: calc(30px + 10 * (100vw - 320px) / 1120);
+  }
+  
+  .info-title{
+    font-size: calc(16px + 16 * (100vw - 320px) / 1120);
+    margin-bottom: calc(10px + 2 * (100vw - 320px) / 1120);
+  }
+  
+
+  .info-description{
+    font-size: calc(12px + 4 * (100vw - 320px) / 1120);
+  }
+  .info-container{
+    margin-bottom: calc(16px + 17 * (100vw - 320px) / 1120);
+  }
+
+  .modal{
+    padding: calc(25px + 25 * (100vw - 320px) / 1120);
+  }
+  .white-cross{
+    width: calc(20px + 26 * (100vw - 320px) / 1120);
+    height: calc(20px + 26 * (100vw - 320px) / 1120);
+    
+  
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    
+    width: 12px;
+}
+
+.best-map{
+    width: calc(276px + 504 * (100vw - 320px) / 1120);
+    height: calc(252px + 428 * (100vw - 320px) / 1120);
+  }
+  .best-sub-map1{
+    font-size: calc(16px + 16 * (100vw - 320px) / 1120);
+  }
+  .best-sub-map2{
+    font-size: calc(24px + 8 * (100vw - 320px) / 1120);
+  }
+
+  .contact{ 
+    width: calc(281px + 81 * (100vw - 320px) / 1120);
+    height: calc(431px + 63 * (100vw - 320px) / 1120);
+  } 
+  .contact-name{ 
+    font-size: calc(24px + 8 * (100vw - 320px) / 1120);
+  } 
+  .contact-role{ 
+    font-size: calc(12px + 2 * (100vw - 320px) / 1120);
+  } 
+  .contact-info{ 
+    font-size: calc(12 * (100vw - 320px) / 1120);
+  } 
+  .opportunity{
+    margin-bottom: calc(50px + 10 * (100vw - 320px) / 1120);
+}
+  .contacts{ 
+    padding-left: calc(54px + 51 * (100vw - 320px) / 1120);
+    padding-right: calc(54px + 51 * (100vw - 320px) / 1120);
+  } 
+
+.best-lviv{ 
+    width: calc(241px + 131 * (100vw - 320px) / 1120);
+    height: calc(130px + 70 * (100vw - 320px) / 1120);
+  }
+  .best-text{
+    font-size: calc(14px + 6 * (100vw - 320px) / 1120);
+  }
+  .info-container{
+    margin-bottom: calc(16px + 17 * (100vw - 320px) / 1120);
+  }
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+    
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+.custom-scrollbar {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgb(54, 54, 54) transparent; /* Firefox */
+    scrollbar-arrow-color: white;
+
+
+}
+/* Змінюємо вигляд скролл бару для body */
+body::-webkit-scrollbar {
+    width: 18px; /* Ширина скролл бару */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(66, 66, 66); /* Колір фону треку */
+    border-left: 4px solid transparent; /* Відстань між треком і повзунком */
+    border-right: 4px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(123, 123, 123); /* Колір "повзунка" */
+    border: 3px solid rgb(66, 66, 66); /* Відстань між повзунком і треком */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Колір повзунка при наведенні */
+}
+
+body::-webkit-scrollbar-button:start {
+    background-color: white; /* Колір для стрілочки вгорі */
+}
+
+body::-webkit-scrollbar-button:end {
+    background-color: white; /* Колір для стрілочки внизу */
+}
+
+
+

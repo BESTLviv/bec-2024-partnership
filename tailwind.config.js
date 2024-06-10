@@ -15,7 +15,14 @@ module.exports = {
         "lines" : "url('/src/assets/lines.svg')",
         'proposition-gradient': 'linear-gradient(90deg, rgb(67, 67, 67), rgb(0, 0, 0) 100%)',
         "ellipse" : 'radial-gradient(50% 50% at 50% 50%, rgba(245, 160, 32, 0.3) 18%, rgba(0, 0, 0, 0.3) 100%)',
+        
         'add-map': "url('/src/assets/addMap.svg')",
+        "linerrr" : "url('/src/assets/linerr.svg')",
+        "lgFull": "gradient(linear, 270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 90.86%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
+        'girl': "url('/src/assets/girl.svg')",
+        "lg-full-screen" : "url('/src/assets/lgFull.svg')",
+        
+
       },
       filter: {
         'blur-200': 'blur(200px)',
@@ -23,6 +30,7 @@ module.exports = {
       backgroundColor: {
         'proposition-button': 'rgb(38, 37, 37)',
         "blackBg" : "rgb(10, 10, 10)",
+        "ellipse-black" : 'rgba(0, 0, 0, 0.85)',
         
       },
       colors: {

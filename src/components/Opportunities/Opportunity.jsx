@@ -1,11 +1,13 @@
 
-export default function Opportunity({ data }) {
+export default function Opportunity({ isMobile, data }) {
     return (
-        <li className=" flex mb-10 gap-5 items-center relative z-20">
-            <div className="min-w-[53px] h-[53px]  flex justify-center  items-center">
+        <li className=" flex justify-center opportunity w-full gap-5 items-center relative z-20 h-[90px]">
+            {isMobile == true ? <div className="  flex justify-center  items-center">
+
                 <img className="" src={data.image} alt="" />
-            </div>
-            <p className=" text-[16px] max-w-[246px] text-white">{data.text}</p>
+            </div> : undefined}
+
+            <p style={{ fontSize: 'calc(14px + 6 * (100vw - 320px) / 1120)' }} className=" flex items-center text-[16px] max-w-[246px] lg:max-w-[344px] h-[90px] text-white">{data.text}</p>
         </li>
     );
 }
