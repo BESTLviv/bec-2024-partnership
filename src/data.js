@@ -213,7 +213,7 @@ export const PROPOSITIONS = [
             },
         ],
         subInfo: "Ви можете обрати будь-які 4 опції з 7 можливих",
-        price: "300"  
+        price: "550"  
     },
 ]
 
