@@ -2014,7 +2014,7 @@ video {
 
 .contact{
   width: calc(281px + 81 * (100vw - 320px) / 1120);
-  height: calc(431px + 63 * (100vw - 320px) / 1120);
+  height: calc(441px + 63 * (100vw - 320px) / 1120);
 }
 
 .contact-name{
