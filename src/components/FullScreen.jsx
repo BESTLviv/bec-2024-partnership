@@ -31,10 +31,10 @@ export default function FullScreen() {
     if (!isMobile) {
         menu =
             <div className="flex flex-row items-center justify-between text-white  ">
-                <button className="  full-input ">Про нас</button>
-                <button className=" full-input  ">Пропозиції</button>
-                <button className=" full-input ">Статистика</button>
-                <button className=" full-input  ">Контакти</button>
+                <button className=" transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input ">Про нас</button>
+                <button className=" transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input  ">Пропозиції</button>
+                <button className=" transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input ">Статистика</button>
+                <button className=" transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input  ">Контакти</button>
             </div>
 
         fullScreen =
@@ -60,7 +60,7 @@ export default function FullScreen() {
             <div id="info" className="  flex-grow flex flex-col justify-center  mx-[50px] mb-[40px] text-white">
                 <h2 className=" text-white text-header font-daysOne mb-[18px]">BEST Engineering Competition</h2>
                 <h3 className=" text-white font-jura leading-[33px] text-[28px]">25-29 жовтня</h3>
-                <button style={{ fontSize: 'calc(16px + 4 * (100vw - 320px) / 1120)' }} className="  block font-workSans bg-customOrange text-black p-[10px]  ">Стати партнером</button>
+                <button style={{ fontSize: 'calc(16px + 4 * (100vw - 320px) / 1120)' }} className="transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]  block font-workSans bg-customOrange text-black p-[10px]  ">Стати партнером</button>
             </div>
         </div>
     )

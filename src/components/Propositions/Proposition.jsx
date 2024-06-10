@@ -17,7 +17,7 @@ export function Proposition({ title, points, subInfo, price, addToBasket, isActi
     return (
         <div id="proposition" className={classBlock}>
             <button
-                className="border-solid border-[3px] border-white rounded-full text-white flex justify-center items-center self-end lg:absolute lg:top-[4%]"
+                className="transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] border-solid border-[3px] border-white rounded-full text-white flex justify-center items-center self-end lg:absolute lg:top-[4%]"
                 onClick={() => setIsModalVisible(true)}
             >
                 i
@@ -83,7 +83,7 @@ export function SubProposition({ text, price, addToBasket, handleRemovePropositi
                         type="checkbox"
                         checked={isActive}
                         onChange={handleCheckboxChange}
-                        className="mr-[12px] lg:mr-[20px] custom-checkbox h-[15px] w-[15px] lg:h-[24px] lg:w-[24px] focus:outline-none"
+                        className="mr-[12px] lg:mr-[20px] custom-checkbox h-[10px] w-[10px] lg:h-[24px] lg:w-[24px] focus:outline-none"
                     />
                 </div>
                 <div className="flex-grow">
@@ -93,7 +93,7 @@ export function SubProposition({ text, price, addToBasket, handleRemovePropositi
                     {price}$
                 </button>
                 <button
-                    className="w-5 h-5 lg:w-[26px] lg:h-[26px] lg:text-[16px] border-solid border-[3px] border-white rounded-full text-white flex justify-center items-center"
+                    className=" transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] w-5 h-5 lg:w-[26px] lg:h-[26px] lg:text-[16px] border-solid border-[3px] border-white rounded-full text-white flex justify-center items-center"
                     onClick={() => setIsModalVisible(true)}
                 >
                     i

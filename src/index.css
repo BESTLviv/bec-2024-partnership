@@ -107,8 +107,8 @@
 
 .custom-checkbox {
     position: relative;
-    width: 24px;
-    height: 24px;
+    width: calc(15px + 9 * (100vw - 320px) / 1120);
+    height: calc(15px + 9 * (100vw - 320px) / 1120);
     border: 2px solid white;
     appearance: none;
     background-color: transparent;
