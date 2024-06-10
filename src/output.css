@@ -2100,16 +2100,6 @@ body::-webkit-scrollbar-thumb:hover {
   /* Колір повзунка при наведенні */
 }
 
-body::-webkit-scrollbar-button:start {
-  background-color: white;
-  /* Колір для стрілочки вгорі */
-}
-
-body::-webkit-scrollbar-button:end {
-  background-color: white;
-  /* Колір для стрілочки внизу */
-}
-
 .placeholder\:text-borderButton::-moz-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
@@ -2626,6 +2616,7 @@ body::-webkit-scrollbar-button:end {
     width: 8px;
   }
 }
+
 
 
 

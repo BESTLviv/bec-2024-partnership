@@ -256,13 +256,6 @@ body::-webkit-scrollbar-thumb:hover {
     background: #555; /* Колір повзунка при наведенні */
 }
 
-body::-webkit-scrollbar-button:start {
-    background-color: white; /* Колір для стрілочки вгорі */
-}
-
-body::-webkit-scrollbar-button:end {
-    background-color: white; /* Колір для стрілочки внизу */
-}
 
 
 
