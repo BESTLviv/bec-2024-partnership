@@ -7,7 +7,7 @@ export function Proposition({ title, points, subInfo, price, addToBasket, isActi
     const [isModalVisible, setIsModalVisible] = useState(false);
 
     let classBlock = "relative flex flex-col text-white  w-full lg:w-full lg:h-[515px] h-[454px] px-5 lg:px-[32px] bg-proposition-gradient p-5 mb-10 text-[12px] font-medium";
-    let classButton = "font-workSans self-center box-border text-[24px] absolute left-1/2 bg-proposition-button transform translate-y-1/2 -translate-x-1/2 bottom-0 w-[112px] h-[42px] border-solid border-2 border-white flex justify-center items-center";
+    let classButton = "transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]  font-workSans self-center box-border text-[24px] absolute left-1/2 bg-proposition-button transform translate-y-1/2 -translate-x-1/2 bottom-0 w-[112px] h-[42px] border-solid border-2 border-white flex justify-center items-center";
 
     if (isActive) {
         classBlock += " clicked";
@@ -47,7 +47,7 @@ export function Proposition({ title, points, subInfo, price, addToBasket, isActi
     );
 }
 
-export function SubProposition({ text, price, addToBasket, handleRemoveProposition, isActive }) {
+export function SubProposition({ isMobile, text, price, addToBasket, handleRemoveProposition, isActive, special }) {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
 
@@ -60,20 +60,60 @@ export function SubProposition({ text, price, addToBasket, handleRemovePropositi
         setIsChecked(!isChecked);
     };
 
-    let classBlock = "relative flex items-center justify-center text-white w-full lg:w-full p-[15px] bg-proposition-gradient  mb-[10px] lg:px-[32px] lg:py-[19px] text-[14px] transition-transform transform-gpu duration-[400ms]";
-    let classButton = "font-workSans box-border text-[14px] lg:text-[20px] relative bg-proposition-button border-[1px] w-[52px] h-[24px] lg:w-[93px] lg:h-[32px] flex justify-center items-center self-center mr-3 lg:mr-5";
+    let classBlock = "relative flex items-center justify-center text-white w-full lg:w-full p-[15px] bg-proposition-gradient lg:mb-[22px] mb-[10px] lg:px-[32px] lg:py-[19px] text-[14px] transition-transform transform-gpu duration-[400ms]";
+    let classButton = "flex-grow-0 flex-shrink-0 add-proposition__button font-workSans box-border text-[14px] lg:text-[20px] relative bg-proposition-button border-[1px] flex justify-center items-center self-center mr-3 lg:mr-5";
 
     if (isActive) {
         classBlock += " clicked";
         classButton += " clicked";
     }
 
+    let extra =
+        <div className="sub-propositions__extra border w-full border-extra flex justify-center items-center">{special}</div>
+
+    let buttons = <div className='flex flex-col lg:flex-row'>
+        <div className='flex mb-2'>
+            <button className={classButton}>
+                {price}$
+            </button>
+            <button
+                className=" lg:mr-2 flex-grow-0 flex-shrink-0 transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] w-5 h-5 lg:w-[26px] lg:h-[26px] lg:text-[16px] border-solid border-[3px] border-white rounded-full text-white flex justify-center items-center"
+                onClick={() => setIsModalVisible(true)}
+            >
+                i
+            </button>
+        </div>
+
+        {special && extra}
+    </div>
+
+
+    if (!isMobile) {
+        buttons = <div className='flex flex-col lg:flex-row'>
+
+            {special && extra}
+            <div className='flex mb-2'>
+                <button className={classButton}>
+                    {price}$
+                </button>
+                <button
+                    className=" lg:mr-2 flex-grow-0 flex-shrink-0 transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] w-5 h-5 lg:w-[26px] lg:h-[26px] lg:text-[16px] border-solid border-[3px] border-white rounded-full text-white flex justify-center items-center"
+                    onClick={() => setIsModalVisible(true)}
+                >
+                    i
+                </button>
+            </div>
+
+
+        </div>
+    }
+
     return (
         <>
-            <Modal isVisible={isModalVisible} onClose={() => setIsModalVisible(false)}>
+            <Modal isVisible={isModalVisible} onClose={() => setIsModalVisible(false)} className="  ">
                 {INFO_ADDITIONAL_PROPOSITIONS.map((info, index) =>
                     <div className=' info-container text-white' key={index}>
-                        <p className=' info-title mb-2 font-daysOne'>{info.title}</p>
+                        <p className='  info-title mb-2 font-daysOne'>{info.title}</p>
                         <p className=' info-description mb-4'>{info.description}</p>
                     </div>)}
             </Modal>
@@ -87,17 +127,10 @@ export function SubProposition({ text, price, addToBasket, handleRemovePropositi
                     />
                 </div>
                 <div className="flex-grow">
-                    <p className="break-words w-[150px] lg:w-auto lg:text-[20px]">{text}</p>
+                    <p className="add-proposition__name break-words pr-[35px]   lg:w-aut">{text}</p>
                 </div>
-                <button className={classButton}>
-                    {price}$
-                </button>
-                <button
-                    className=" transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] w-5 h-5 lg:w-[26px] lg:h-[26px] lg:text-[16px] border-solid border-[3px] border-white rounded-full text-white flex justify-center items-center"
-                    onClick={() => setIsModalVisible(true)}
-                >
-                    i
-                </button>
+
+                {buttons}
 
 
             </div>

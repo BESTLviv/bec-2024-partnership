@@ -18,11 +18,11 @@ export const SUBJECTS = [
         info: [
             {
                 word: 'Case Study',
-                description: " — категорія, у якій потрібно запропонувати теоретичне розв'язання заданої адміністративної, економічної, виробничої, соціальної чи маркетингової проблеми."
+                description: " —  категорія, у якій потрібно запропонувати теоретичне розв'язання заданої адміністративної, економічної, виробничої, соціальної чи маркетингової проблеми."
             },
             {
                 word: 'Ціль',
-                description: " — розробити стратегію дій, що покриватиме всі вимоги та вписуватиметься в бюджет.",
+                description: " — розробити план подальших дій, що покриватиме всі вимоги та відповідатиме визначеному бюджету.",
             },
         ],
        
@@ -33,7 +33,7 @@ export const SUBJECTS = [
         info: [
             {
                 word: 'Team Design',
-                description: " — категорія, що вимагає практичного розв'язання актуальної задачі в області IoT, embedded, електроніки, радіотехніки чи механіки. "
+                description: " —  категорія, що вимагає практичного розв'язання актуальної задачі в області IoT, embedded, електроніки, радіотехніки чи механіки. "
             },
             {
                 word: 'Ціль',
@@ -137,11 +137,31 @@ export const PROPOSITIONS = [
                 text: "Логотип на сайті події, у пост-відео та на бренд-вол",
             },
             {
-                text: "Промоція в соцмережах: 1 Instagram-stories, пост у LinkedIn",
+                text: "Промоція в соцмережах",
             },
         ],
         subInfo: "Цей пакет є обов’язковим!",
         price: "350"  
+    },
+   
+    {
+        title: "Influencer",
+        points: [
+            {
+                text: "Пост на Instagram-сторінці"
+            },
+            {
+                text: "Відео–представлення компанії",
+            },
+            {
+                text: "Пост–дайджест у Telegram-каналі",
+            },
+            {
+                text: "Банер компанії на місці проведення",
+            },
+        ],
+        subInfo: "3 місця залишилось",
+        price: "300"  
     },
     {
         title: "Utopia",
@@ -167,25 +187,6 @@ export const PROPOSITIONS = [
         ],
         subInfo: "4 місця залишилось",
         price: "700"  
-    },
-    {
-        title: "Influencer",
-        points: [
-            {
-                text: "Пост на Instagram-сторінці"
-            },
-            {
-                text: "Відео–представлення компанії",
-            },
-            {
-                text: "Пост–дайджест у Telegram-каналі",
-            },
-            {
-                text: "Банер компанії на місці проведення",
-            },
-        ],
-        subInfo: "3 місця залишилось",
-        price: "300"  
     },
     {
         title: "Advanced",
@@ -231,7 +232,7 @@ export const INFO_PROPOSITIONS = [
             },
             {
                 text: "Логотип на сайті події",
-                description: "Розміщення логотипа компанії на офіційному сайті події. "
+                description: "Розміщення логотипа компанії на офіційному сайті події.  "
             },
             {
                 text: "Логотип у пост-відео",
@@ -242,7 +243,7 @@ export const INFO_PROPOSITIONS = [
                 description: "Під час події буде розміщений великий банер з логотипами всіх партнерів наших змагань. "
             },
             {
-                text: "Промоція в соцмережах: 1 Instagram-stories, пост у LinkedIn",
+                text: "Промоція в соцмережах",
                 description: "Розміщення інформації про компанію в соціальних мережах: згадка в 1 Instagram-stories, 1 пост в LinkedIn."
             },
         ],
@@ -256,7 +257,7 @@ export const INFO_PROPOSITIONS = [
             },
             {
                 text: "Логотип на футболці",
-                description: "Логотип Вашої компанії буде надрукований на футболках, які отримають учасники змагань та представники організації BEST Lviv. "
+                description: "Логотип Вашої компанії буде надрукований на футболках, які отримають учасники змагань та представники організації BEST Lviv.  "
             },
             {
                 text: "Доступ до бази CV учасників ",
@@ -264,11 +265,11 @@ export const INFO_PROPOSITIONS = [
             },
             {
                 text: "Постійний доступ до змагань ",
-                description: "Представники та представниці Вашої компанії матимуть змогу без обмежень знаходитися на місці проведення змагань. "
+                description: "Представники та представниці Вашої компанії матимуть змогу без обмежень знаходитися на місці проведення змагань.  "
             },
             {
                 text: "Розсилка вакансій у Telegram боті ",
-                description: "Піврічна розсилка вакансій компанії у нашому Telegram-боті, що призначений для реєстрації, важливих анонсів та комунікації під час події. "
+                description: "Піврічна розсилка вакансій компанії у нашому Telegram-боті, що призначений для реєстрації, важливих анонсів та комунікації під час події.  "
             },
             {
                 text: "Стаття про компанію на сайті події ",
@@ -315,7 +316,7 @@ export const INFO_PROPOSITIONS = [
             },
             {
                 text: "Номінація від компанії ",
-                description: "Ви зможете обрати власну номінацію на змаганнях та нагородити команду, рішення або виступ якої найбільше резонує саме Вашій компанії. "
+                description: "Ви зможете обрати власну номінацію на змаганнях та нагородити команду, рішення або виступ якої найбільше резонує саме Вашій компанії.  "
             },
             {
                 text: "День з компанією ",
@@ -336,8 +337,8 @@ export const INFO_PROPOSITIONS = [
 
 export const ADDITIONAL_PROPOSITIONS = [
     {
-        text: "Тестові співбесіди",
-        price: "60",
+        text: "Пробна співбесіда з учасниками",
+        price: "100",
     },
     {
         text: "Розсилка вакансій у Telegram боті",
@@ -366,10 +367,12 @@ export const ADDITIONAL_PROPOSITIONS = [
     {
         text: "Завдання для учасників від компанії на Case Study",
         price: "250",
+        special: "1 доступна"
     },
     {
         text: "Завдання для учасників від компанії на Тeam Design",
         price: "250",
+        special: "1 доступна"
     },
   
 ]
@@ -389,7 +392,7 @@ export const INFO_ADDITIONAL_PROPOSITIONS = [
     },
     {
         title: "Логотип на футболці",
-        description: "Логотип Вашої компанії буде надрукований на футболках, які отримають учасники змагань та представники організації BEST Lviv. ",
+        description: "Логотип Вашої компанії буде надрукований на футболках, які отримають учасники змагань та представники організації BEST Lviv.  ",
     },
     {
         title: "Доступ до бази CV учасників",
@@ -443,23 +446,26 @@ export const CONTACTS = [
   
 ]
 
-import battery from "/src/assets/partners/battery.svg"
+
 import dataArt from "/src/assets/partners/dataArt.svg"
 import dialog from "/src/assets/partners/dialog.svg"
-import donatello from "/src/assets/partners/donatello.svg"
-import ecoSfera from "/src/assets/partners/ecoSfera.svg"
+
 import fujikura from "/src/assets/partners/fujikura.svg"
-import horihoviy from "/src/assets/partners/horihoviyGay.svg"
-import lukas from "/src/assets/partners/lukas.svg"
+
 import rozkvit from "/src/assets/partners/rozkvit.svg"
 import sigma from "/src/assets/partners/sigma.svg"
 import squad from "/src/assets/partners/squad.svg"
-import sweetTv from "/src/assets/partners/sweetTv.svg"
 import warbirds from "/src/assets/partners/warbirds.svg"
-
-
+import leobit from "/src/assets/partners/leobit.svg"
+import teamwoy from "/src/assets/partners/teamwoy.svg"
+import tskt from "/src/assets/partners/tskt.svg"
+import softserve from "/src/assets/partners/softwerve.svg"
+import globalLogic from "/src/assets/partners/globalLogic.svg"
 
 export const PARTNERS = [
+    {
+        image: leobit,
+    },
     {
         image: warbirds,
     },
@@ -467,20 +473,20 @@ export const PARTNERS = [
         image: fujikura,
     },
     {
-        image: donatello,
+        image: tskt,
     },
     {
-        image: sweetTv,
+        image: softserve,
     },
     {
-        image: ecoSfera,
+        image: globalLogic,
     },
     {
-        image: lukas,
+        image: teamwoy,
     },
     {
-        image: horihoviy,
-    },
+        image: dialog,
+    },  
     {
         image: sigma,
     },  
@@ -488,17 +494,31 @@ export const PARTNERS = [
         image: dataArt,
     },  
     {
-        image: battery,
+        image: squad,
     },  
     {
         image: rozkvit,
     },  
+]
+
+
+import slider1 from "/src/assets/slider1.png";
+import slider2 from "/src/assets/slider2.png";
+import slider3 from "/src/assets/slider3.png";
+import slider4 from "/src/assets/slider4.png";
+
+export const SLIDES = [
     {
-        image: squad,
-    },  
+        src: slider1,
+    },
     {
-        image: dialog,
-    },  
-   
-  
+        src: slider2,
+    },
+    {
+        src: slider3,
+    },
+    {
+        src: slider4,
+    },
+
 ]

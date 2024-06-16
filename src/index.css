@@ -14,8 +14,8 @@
 #header{
     padding-left: calc(20px + 30 * (100vw - 320px) / 1120);
     padding-right: calc(20px + 30 * (100vw - 320px) / 1120);
-    padding-top: calc(17px + 20 * (100vw - 320px) / 1120);
-    padding-bottom: calc(17px + 20 * (100vw - 320px) / 1120);
+    padding-top: calc(17px + 3 * (100vw - 320px) / 1120);
+    padding-bottom: calc(17px + 3 * (100vw - 320px) / 1120);
 }
 #header div button{
     margin-right: calc(70px + 33 * (100vw - 320px) / 1120);
@@ -56,6 +56,7 @@
   #opportunities{
     padding-left: calc(25px + 115 * (100vw - 320px) / 1120);
     padding-right: calc(25px + 115 * (100vw - 320px) / 1120);
+    margin-bottom: calc(160px + 100 * (100vw - 320px) / 1120);
   }
   .proposition__title {
     font-size: calc(20px + 16 * (100vw - 320px) / 1120);
@@ -179,15 +180,44 @@
     font-size: calc(24px + 8 * (100vw - 320px) / 1120);
   }
 
+  .contacts{
+    padding-left: calc(55px + 50 * (100vw - 320px) / 1120);
+    padding-right: calc(55px + 50 * (100vw - 320px) / 1120);
+  }
+  .footer{
+    padding-left: calc(34px + 71 * (100vw - 320px) / 1120);
+    padding-right: calc(34px + 71 * (100vw - 320px) / 1120);
+    margin-bottom: calc(10px + 14 * (100vw - 320px) / 1120);
+  }
+  .footer__text{
+    font-size: calc(12px + 8 * (100vw - 320px) / 1120);
+  }
+  .footer__best{
+    width: calc(40px + 15  * (100vw - 320px) / 1120);
+    height: calc(20px + 14 * (100vw - 320px) / 1120);
+  }
+  .footer__social{
+    width: calc(15px + 10  * (100vw - 320px) / 1120);
+    height: calc(15px + 10 * (100vw - 320px) / 1120);
+  }
+
   .contact{ 
     width: calc(281px + 81 * (100vw - 320px) / 1120);
     height: calc(441px + 63 * (100vw - 320px) / 1120);
   } 
+  .contact-image{ 
+    margin-bottom: calc(9.5px + 11.5 * (100vw - 320px) / 1120);
+  } 
   .contact-name{ 
     font-size: calc(24px + 8 * (100vw - 320px) / 1120);
+    margin-bottom: calc(7.5px + 13.5 * (100vw - 320px) / 1120);
   } 
   .contact-role{ 
     font-size: calc(12px + 2 * (100vw - 320px) / 1120);
+    margin-bottom: calc(9.5px + 8.5 * (100vw - 320px) / 1120);
+  } 
+  .contact-border{ 
+    margin-bottom: calc(12.5px + 7.5 * (100vw - 320px) / 1120);
   } 
   .contact-info{ 
     font-size: calc(12 * (100vw - 320px) / 1120);
@@ -198,6 +228,7 @@
   .contacts{ 
     padding-left: calc(54px + 51 * (100vw - 320px) / 1120);
     padding-right: calc(54px + 51 * (100vw - 320px) / 1120);
+    margin-bottom: calc(50px + 90 * (100vw - 320px) / 1120);
   } 
 
 .best-lviv{ 
@@ -210,7 +241,165 @@
   .info-container{
     margin-bottom: calc(16px + 17 * (100vw - 320px) / 1120);
   }
+  .partners__row{
+    margin-bottom: calc(30px + 6 * (100vw - 320px) / 1120);
+  }
+  .partners__img{
+    width: calc(100% + (50 * (100vw - 320px)) / 1120);
+    height: calc(100% + (50 * (100vw - 320px)) / 1120);
+    /* transform: scale(calc(1 + 0.5 * (100vw - 320px) / 1120)); */
 
+  }
+
+  .sub-propositions__extra{
+    font-size: calc(12px + 2  * (100vw - 320px) / 1120);
+    height: calc(24px + 8 * (100vw - 320px) / 1120);
+    color: rgb(213, 213, 213);
+    margin-right: calc(10px + 10  * (100vw - 320px) / 1120);
+    padding: 0px 5px;
+  }
+
+  .basket__submit{
+    font-size: calc(12px + 4 * (100vw - 320px) / 1120);
+  }
+
+  .basket__discount{
+    font-size: calc(12px + 4 * (100vw - 320px) / 1120);
+  }
+  .basket__section{
+    font-size: calc(24px + 12 * (100vw - 320px) / 1120);
+    margin-bottom: calc(30px + 10 * (100vw - 320px) / 1120);
+  }
+  .basket__text{
+    font-size: calc(16px + 8 * (100vw - 320px) / 1120);
+  }
+  .basket__total{
+    font-size: calc(18px + 6 * (100vw - 320px) / 1120);
+  }
+
+  .add-proposition__name{
+    font-size: calc(14px + 6 * (100vw - 320px) / 1120);
+  }
+  .add-proposition__button{
+    width: calc(52px + 42 * (100vw - 320px) / 1120);
+    height: calc(24px + 8 * (100vw - 320px) / 1120);
+    font-size: calc(14px + 6 * (100vw - 320px) / 1120);
+  }
+
+  .partner__text{
+    font-size: calc(16px + 8 * (100vw - 320px) / 1120);
+  }
+  .partner__title{
+    font-size: calc(22px + 14 * (100vw - 320px) / 1120);
+  }
+  .partner__span-title{
+    font-size: calc(28px + 8 * (100vw - 320px) / 1120);
+  }
+  .partner__sub-title{
+    font-size: calc(20px + 12 * (100vw - 320px) / 1120);
+  }
+  .partner__image{
+    width: calc(298px + 175 * (100vw - 320px) / 1120);
+    height: calc(205px + 91 * (100vw - 320px) / 1120);
+  }
+  .partner__box{
+    margin-bottom: calc(5px + 1* (100vw - 320px) / 1120);
+  }
+  .portrait{
+    margin-bottom: calc(125px + 125* (100vw - 320px) / 1120);
+  }
+  .portrait__title{
+    margin-bottom: calc(30px + 35 *  (100vw - 320px) / 1120);
+  }
+  .propositions{
+    margin-bottom: calc(150px + 100* (100vw - 320px) / 1120);
+  }
+  .propositions__title{
+    margin-bottom: calc(30px + 35 *  (100vw - 320px) / 1120);
+  }
+
+  .sub-propositions{
+    margin-bottom: calc(150px + 100* (100vw - 320px) / 1120);
+  }
+  .sub-propositions__title{
+    margin-bottom: calc(30px + 35 *  (100vw - 320px) / 1120);
+  }
+
+  .basket{
+    margin-bottom: calc(150px + 100* (100vw - 320px) / 1120);
+  }
+  .basket__title{
+    margin-bottom: calc(25px + 30 *  (100vw - 320px) / 1120);
+  }
+
+  .partners{
+    margin-bottom: calc(150px + 100 * (100vw - 320px) / 1120);
+  }
+  .partners__title{
+    margin-bottom: calc(55px * 2  (100vw - 320px) / 1120);
+  }
+
+  .about{
+    margin-bottom: calc(150px + 100 * (100vw - 320px) / 1120);
+  }
+  .about__title{
+    margin-bottom: calc(25px +  30*  (100vw - 320px) / 1120);
+  }
+
+ 
+  .contacts__title{
+    margin-bottom: calc(25px +  30*   (100vw - 320px) / 1120);
+  }
+
+  .statistic{
+    margin-bottom: calc(150px + 120 * (100vw - 320px) / 1120);
+  }
+  .statistic__title{
+    font-size: calc(24px + 12 * (100vw - 320px) / 1120);
+    margin-bottom: calc(50px * (100vw - 320px) / 1120);
+  }
+  .statistic__sub-title{
+    font-size: calc(20px + 8 * (100vw - 320px) / 1120);
+  }
+  .statistic__span-sub-title{
+    font-size: calc(28px + 8 * (100vw - 320px) / 1120);
+  }
+  .statistic__info{
+    font-size: calc(20px + 12 * (100vw - 320px) / 1120);
+  }
+  .vs{
+    margin-bottom: calc(150px + 170 * (100vw - 320px) / 1120);
+  }
+  .vs__text{
+    font-size: calc(16px + 4 * (100vw - 320px) / 1120);
+  }
+  .vs__image{
+    width: calc(270px + 102 * (100vw - 320px) / 1120);
+    height: calc(152px + 72 * (100vw - 320px) / 1120);
+  }
+  .vs__title{
+    margin-bottom: calc(25px + 65 * (100vw - 320px) / 1120);
+  }
+  .what__text{
+    font-size: calc(14px + 6 * (100vw - 320px) / 1120);
+  }
+  .what__button{
+    font-size: calc(16px + 4 * (100vw - 320px) / 1120);
+    width: calc(282px + 77 * (100vw - 320px) / 1120);
+    height: calc(44px + 6 * (100vw - 320px) / 1120);
+  }
+  .slide__image{
+   
+    width: calc(300px + 317 * (100vw - 320px) / 1120);
+    height: calc(205px + 219 * (100vw - 320px) / 1120);
+  }
+
+  .opportunities__title{
+    margin-bottom: calc(15px + 60 * (100vw - 320px) / 1120);
+  } 
+  .statistic__titlee{
+    margin-bottom: calc(28px + 26 * (100vw - 320px) / 1120);
+  } 
 .custom-scrollbar::-webkit-scrollbar-track {
     background: transparent;
     border-radius: 10px;
@@ -227,7 +416,24 @@
     background: #555;
 }
 
+.photo-slider .slick-slide {
+  padding: 0 10px; /* Відступи зліва та справа */
+}
 
+.photo-slider .slick-list {
+  margin: 0 -10px; /* Вирівнюємо відступи */
+}
+
+.photo-slider {
+  margin-bottom: calc(150px + 100 * (100vw - 320px) / 1120);
+}
+
+.what{
+  margin-bottom: calc(38px + 15 * (100vw - 320px) / 1120);
+}
+.what__title{
+  margin-bottom: calc(25px + 30 * (100vw - 320px) / 1120);
+}
 
 .custom-scrollbar {
     scrollbar-width: thin; /* Firefox */

@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        '1090xl': '1090px',
+        '3xl': '1300px',
+      },
       backgroundImage: {
         'full-screen': "url('../assets/full-screen.png')",
         'footer-texture': "url('/img/footer-texture.png')",
@@ -15,7 +19,9 @@ module.exports = {
         "lines" : "url('/src/assets/lines.svg')",
         'proposition-gradient': 'linear-gradient(90deg, rgb(67, 67, 67), rgb(0, 0, 0) 100%)',
         "ellipse" : 'radial-gradient(50% 50% at 50% 50%, rgba(245, 160, 32, 0.3) 18%, rgba(0, 0, 0, 0.3) 100%)',
-        
+        "lines1" : "url('/src/assets/lines1.svg')",
+        "lines2" : "url('/src/assets/lines1.svg')",
+        "mobile-lines" : "url('/src/assets/mobileLines.svg')",
         'add-map': "url('/src/assets/addMap.svg')",
         "linerrr" : "url('/src/assets/linerr.svg')",
         "lgFull": "gradient(linear, 270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 90.86%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
@@ -40,7 +46,8 @@ module.exports = {
         customGray: 'rgb(213, 213, 213)',
         propositionBorder: "  rgb(245, 160, 32)",
         borderButton: "rgba(255, 255, 255, 0.4)",
-        partner: "rgb(172, 170, 170);"
+        partner: "rgb(172, 170, 170)",
+        extra: "rgb(192, 192, 192)"
       },
     },
     

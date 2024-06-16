@@ -24,16 +24,12 @@ export default function Basket({ selectedPropositions, handleRemoveProposition }
     const [companyError, setCompanyError] = useState("");
 
     function handleChangeName(event) {
-
-
         setCompanyName(event.target.value);
-        // Очищуємо текстове повідомлення про помилку, якщо користувач виправив значення
         setCompanyError("");
     }
 
     function handleChangeEmail(event) {
         setEmailName(event.target.value);
-        // Очищуємо текстове повідомлення про помилку, якщо користувач виправив значення
         setEmailError("");
     }
 
@@ -82,27 +78,29 @@ export default function Basket({ selectedPropositions, handleRemoveProposition }
         return re.test(email);
     };
 
-    // Викликати функцію для надсилання листа
-
-
-    const basket = <div className="text-white mx-[50px] self-center lg:self-start flex flex-col border-2 border-white p-[30px] mb-[30px] w-[380px] lg:w-[380px] h-auto lg:max-h-[330px]">
+    const basket = <div className="text-white mx-[50px] self-center lg:self-start flex flex-col border-2 border-white p-[30px] mb-[30px] w-[360px] lg:w-[380px] h-auto lg:max-h-[330px]">
         <div>
-            <input id='email' onChange={handleChangeEmail} className="pl-[22px] mb-3 lg:text-[16px] h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder="Введіть пошту" />
+            <input id='email' onChange={handleChangeEmail} className="basket__submit pl-[22px] mb-3  h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder="Введіть пошту" />
             <div className="text-red-500 mb-2">{emailError}</div>
         </div>
         <div>
-            <input id='company' onChange={handleChangeName} className="pl-[22px] mb-3 lg:text-[16px] h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder="Введіть назву компанії" />
+            <input id='company' onChange={handleChangeName} className="basket__submit pl-[22px] mb-3  h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder="Введіть назву компанії" />
             <div className="text-red-500">{companyError}</div>
         </div>
-        <button onClick={sendEmail} className="mt-[30px] self-center text-white border-2 border-white flex justify-center items-center h-[40px] w-[161px] lg:h-[40px] lg:w-[195px] transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]">Оформити</button>
+        <button onClick={sendEmail} className="basket__submit mt-[30px] self-center text-white border-2 border-white flex justify-center items-center h-[40px] w-[161px] lg:h-[40px] lg:w-[195px] transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]">Оформити</button>
     </div>
 
     return (
-        <>
-            <Title className=" text-center lg:text-center mx-[100px] mb-[25px] lg:mb-[54px]">КОШИК</Title>
-            <div className="flex flex-col lg:flex-row lg:justify-center lg:gap-[160px] lg:mb-[150px]">
-                <div className="text-white mx-[30px] flex flex-col  lg:w-[570px]">
+        <div className="basket relative ">
+            <div className="absolute bg-lines2 bg-contain  bg-no-repeat w-[2300px] h-[1500px] z-0  left-[5%] transform  top-[-115%]"></div>
 
+            <div className="absolute bg-ellipse-black w-[1700.39px] rounded-full h-[460.22px] left-[-50%] top-[-70%] z-10 filter blur-[70px] transform rotate-[-90.56deg]"></div>
+            <div className="absolute bg-ellipse-black w-[1700.39px] rounded-full h-[674.22px] left-[50%] top-[-100%] z-10 filter blur-[70px] transform rotate-[-90.56deg]"></div>
+
+            <div className="bg-ellipse w-[564px] h-[652px] left-[90%] top-[40%] absolute scale-[1.7] transform rotate-[-63.49deg] z-10 filter blur-[90px]"></div>
+            <Title className=" relative z-30  basket__title text-center lg:text-center mx-[100px] mb-[25px] lg:mb-[54px]">КОШИК</Title>
+            <div className="flex relative z-30 flex-col lg:flex-row lg:justify-center lg:gap-[160px] lg:mb-[150px]">
+                <div className="text-white mx-[30px] flex flex-col  lg:w-[570px]">
                     <div>
                         <div className=" text-[24px] lg:text-[36px] font-daysOne mb-[20px] ">Пакети</div>
                         <ol>
@@ -114,26 +112,23 @@ export default function Basket({ selectedPropositions, handleRemoveProposition }
                         </ol>
                     </div>
                     <div>
-                        <div className=" text-[24px] lg:text-[36px] font-daysOne mb-[30px] ">Опції</div>
+                        <div className="basket__section font-daysOne mb-[30px] ">Опції</div>
                         <ol>
                             {selectedPropositions.map((item, index) => (
                                 item.isSub && (
                                     <Purchase handleRemoveProposition={handleRemoveProposition} key={index} name={item.title} price={item.price} />
                                 )
                             ))}
-
-
                         </ol>
                     </div>
-
                     <div className="flex justify-between  lg:mb-[100px]">
-                        <div className=" text-[24px] lg:text-[36px] font-daysOne mb-[32px] ">Total:</div>
-                        <div className=" flex justify-center items-center h-[32px] w-[112px] lg:h-[43px] lg:w-[160px]  bg-proposition-button text-[18px] font-daysOne border-propositionBorder border-2 lg:text-[24px]">{sum + "$"}</div>
+                        <div className=" basket__section font-daysOne mb-[32px] ">Total:</div>
+                        <div className="basket__total flex justify-center items-center h-[32px] w-[112px] lg:h-[43px] lg:w-[160px]  font-daysOne  bg-proposition-button border-propositionBorder border-2">{sum + "$"}</div>
                     </div>
                     {isMobile && basket}
                     <div className=" text-white  mb-[150px] ">
-                        <div className=" text-[24px] mb-[12px] font-daysOne ">Акції</div>
-                        <ol className=" text-[12px] lg:text-[16px] w-[60%] lg:w-auto">
+                        <div className=" basket__section mb-[12px] font-daysOne ">Акції</div>
+                        <ol className="basket__discount w-[60%] lg:w-auto">
                             <li className="mb-[5px]"><span className=" text-orange-400">-10%</span> при купівлі 3–х пакетів.</li>
                             <li className="mb-[5px]"><span className=" text-orange-400">-5%</span> для компаній–партнерів EBEC’2021 та/або BEC’2023 (застосовується після узгодження з організаторами).</li>
                             <li className="mb-[5px]"><span className=" text-orange-400">-10%</span>  для всіх партнерів, що працюють у сфері military та military–tech (застосовується після узгодження з організаторами)</li>
@@ -149,6 +144,6 @@ export default function Basket({ selectedPropositions, handleRemoveProposition }
             </div>
 
 
-        </>
+        </div>
     );
 }
