@@ -505,7 +505,7 @@ export const PARTNERS = [
 import slider1 from "/src/assets/slider1.png";
 import slider2 from "/src/assets/slider2.png";
 import slider3 from "/src/assets/slider3.png";
-import slider4 from "/src/assets/slider4.png";
+import slider4 from "/src/assets/slider4.jpg";
 
 export const SLIDES = [
     {

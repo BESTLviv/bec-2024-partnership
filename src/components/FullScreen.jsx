@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 
 export default function FullScreen({ propositionsRef, whatBecRef, statisticsRef, contactsRef }) {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+    const [modalMenu, setModalMenu] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -44,46 +45,78 @@ export default function FullScreen({ propositionsRef, whatBecRef, statisticsRef,
         }
     };
 
+    const handleClickMenu = () => {
+        setModalMenu(!modalMenu);
+    };
+
+    const handleClickMenuElements = () => {
+        setModalMenu(false); // Закриваємо меню після кліку на один з елементів
+    };
+
     let menu = (
-        <div className="flex flex-col items-center space-y-[5px] ">
+        <div onClick={handleClickMenu} className="flex flex-col items-center space-y-[5px] ">
             <span className="block w-7 h-[3px] bg-white"></span>
             <span className="block w-7 h-[3px] bg-white"></span>
             <span className="block w-7 h-[3px] bg-white"></span>
         </div>
     );
 
-    let fullScreen = <img className=" absolute inset-0 -z-10 object-cover h-full w-full" src={imgFullScreen} alt="" />;
+    if (modalMenu) {
+        menu = (
+            <div onClick={handleClickMenu} className="relative flex flex-col items-center space-y-[5px]">
+                <span className="absolute block w-7 h-[3px] translate-x-[-50%] transform rotate-[-45deg] bg-white"></span>
+                <span className="absolute block w-7 h-[3px] translate-x-[-50%]  translate-y-[-4.9px] transform rotate-[45deg] bg-white"></span>
+            </div>
+        );
+    }
+
+    let modalMenuContent = (
+        <div className={`fixed flex opacity-90 items-center justify-center z-50 bg-customOrange top-0 right-0 w-[40%] h-full transition-transform transform ${modalMenu ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className="absolute top-4 right-4">
+                <button onClick={handleClickMenu} className="text-black text-2xl">&times;</button>
+            </div>
+            <div className="flex flex-col items-center justify-center space-y-4 py-10 font-daysOne text-black">
+                <button onClick={() => { handleScrollToWhatBec(); handleClickMenuElements(); }} className="text-[20px]">Про нас</button>
+                <button onClick={() => { handleScrollToPropositions(); handleClickMenuElements(); }} className="text-[20px]">Пропозиції</button>
+                <button onClick={() => { handleScrollToStatistics(); handleClickMenuElements(); }} className="text-[20px]">Статистика</button>
+                <button onClick={() => { handleScrollToContacts(); handleClickMenuElements(); }} className="text-[20px]">Контакти</button>
+            </div>
+        </div>
+    );
+
+    let fullScreen = <img className="absolute inset-0 -z-10 object-cover h-full w-full" src={imgFullScreen} alt="" />;
 
     if (!isMobile) {
         menu = (
             <div className="flex flex-row items-center justify-between text-white">
-                <button onClick={handleScrollToWhatBec} className=" pointer-events-auto transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input">Про нас</button>
-                <button onClick={handleScrollToPropositions} className=" transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input">Пропозиції</button>
-                <button onClick={handleScrollToStatistics} className=" transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input">Статистика</button>
-                <button onClick={handleScrollToContacts} className=" transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input">Контакти</button>
+                <button onClick={handleScrollToWhatBec} className="pointer-events-auto transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input">Про нас</button>
+                <button onClick={handleScrollToPropositions} className="transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input">Пропозиції</button>
+                <button onClick={handleScrollToStatistics} className="transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input">Статистика</button>
+                <button onClick={handleScrollToContacts} className="transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] full-input">Контакти</button>
             </div>
         );
 
         fullScreen = (
             <>
-                <div className=" background-fill absolute  right-0 -z-10 object-cover h-full w-[57.2%]" />
-                <img className=" background-fill absolute  right-0 -z-20 object-cover h-full w-[57.2%]" src={lgFullScreen} alt="" />
-                <img className=" bg-lgFull absolute  bottom-0 -right-[19%] -z-10 object-contain h-[67.4%] w-full" src={girl} alt="" />
+                <div className="background-fill absolute right-0 -z-10 object-cover h-full w-[57.2%]" />
+                <img className="background-fill absolute right-0 -z-20 object-cover h-full w-[57.2%]" src={lgFullScreen} alt="" />
+                <img className="bg-lgFull absolute bottom-0 -right-[19%] -z-10 object-contain h-[67.4%] w-full" src={girl} alt="" />
             </>
         );
     }
 
     return (
-        <div id="full-screen" className=" mb-[160px] lg:mb-[250px] relative z-40 flex flex-col bg-black h-screen overflow-hidden">
+        <div id="full-screen" className="mb-[160px] lg:mb-[250px] relative z-40 flex flex-col bg-black h-screen overflow-hidden">
+            {modalMenuContent}
             {fullScreen}
-            <div id="header" className=" fixed z-50 filter backdrop-blur-sm top-0 flex items-center justify-between lg:justify-normal lg:items-normal w-full px-[25px] lg:px-[50px]  py-[20px] bg-black bg-opacity-10">
+            <div id="header" className="fixed z-50 filter backdrop-blur-sm top-0 flex items-center justify-between lg:justify-normal lg:items-normal w-full px-[25px] lg:px-[50px] py-[20px] bg-black bg-opacity-10">
                 <div className="lg:mr-[132px] shrink-0 grow-0">
                     <img className="" src={logo} alt="Logo" />
                 </div>
                 {menu}
             </div>
             <div></div>
-            <div id="info" className=" relative top-1/2 transform translate-y-[-50%] flex-grow flex flex-col justify-center  mx-[50px] mb-[40px] text-white">
+            <div id="info" className="relative top-1/2 transform translate-y-[-50%] flex-grow flex flex-col justify-center mx-[50px] mb-[40px] text-white">
                 <h2 className="text-white text-header font-daysOne mb-[18px]">BEST Engineering Competition</h2>
                 <h3 className="text-white font-jura leading-[33px] text-[28px]">25-29 жовтня</h3>
                 <button onClick={handleScrollToPropositions} style={{ fontSize: 'calc(16px + 4 * (100vw - 320px) / 1120)' }} className="transition-transform transform-gpu duration-[400ms] hover:scale-[1.1] block font-workSans bg-customOrange text-black p-[10px]">Стати партнером</button>

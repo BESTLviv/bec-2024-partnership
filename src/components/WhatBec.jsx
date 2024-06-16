@@ -18,7 +18,7 @@ export default function WhatBec({ isMobile, innerRef }) {
 
 
     return (
-        <div ref={innerRef} className="what flex flex-col lg:items-center self-center relative text-white px-[50px]   ">
+        <div ref={innerRef} className="what flex flex-col items-center self-center relative text-white px-[50px]   ">
             {backGroundOrange}
             {lines}
             {backGroundBlack1}
@@ -29,8 +29,8 @@ export default function WhatBec({ isMobile, innerRef }) {
 
 
 
-            <Title className="what__title relative z-20 text-left lg:text-center lg:mb-[54px]">ЩО ТАКЕ BEC?</Title>
-            <div className="what__text lg:text-center  relative z-20 lg:w-[724px]">
+            <Title className="what__title relative z-20 text-center lg:mb-[54px]">ЩО ТАКЕ BEC?</Title>
+            <div className="what__text text-center  relative z-20 lg:w-[724px]">
                 <p className="  leading-[150%] mb-[10px]">Це змагання, що запрошують молодих інженерів застосувати свої знання та навички для вирішення реальних завдань в одній з двох категорій
                     — Case Study (CS) та Team Design (TD).</p>
                 <p className="  leading-[150%] "></p>
