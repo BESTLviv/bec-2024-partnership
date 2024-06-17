@@ -93,7 +93,7 @@ export default function Basket({ isMobile, selectedPropositions, handleRemovePro
 
             <div className="bg-ellipse w-[564px] h-[652px] left-[90%] top-[60%] absolute scale-[1.7] transform rotate-[-63.49deg] z-10 filter blur-[90px]"></div>
             <Title className=" relative z-30  basket__title text-center lg:text-center mx-[100px] mb-[25px] lg:mb-[54px]">КОШИК</Title>
-            <div className="flex relative z-30 flex-col lg:flex-row lg:justify-center lg:gap-[160px] lg:mb-[150px]">
+            <div className="flex relative z-30 flex-col lg:flex-row lg:justify-center lg:gap-[160px] ">
                 <div className="text-white mx-[30px] flex flex-col  lg:w-[570px]">
                     <div>
                         <div className=" text-[24px] lg:text-[36px] font-daysOne mb-[20px] ">Пакети</div>
