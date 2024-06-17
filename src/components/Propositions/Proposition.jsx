@@ -71,8 +71,8 @@ export function SubProposition({ isMobile, text, price, addToBasket, handleRemov
     let extra =
         <div className="sub-propositions__extra border w-full border-extra flex justify-center items-center">{special}</div>
 
-    let buttons = <div className='flex flex-col lg:flex-row'>
-        <div className='flex mb-2'>
+    let buttons = <div className='flex flex-col  lg:flex-row'>
+        <div className='flex mb-2  justify-center items-center'>
             <button className={classButton}>
                 {price}$
             </button>
@@ -88,11 +88,11 @@ export function SubProposition({ isMobile, text, price, addToBasket, handleRemov
     </div>
 
 
-    if (!isMobile) {
+    if (!isMobile || special == null) {
         buttons = <div className='flex flex-col lg:flex-row'>
 
             {special && extra}
-            <div className='flex mb-2'>
+            <div className='flex '>
                 <button className={classButton}>
                     {price}$
                 </button>
