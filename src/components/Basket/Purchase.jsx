@@ -5,7 +5,7 @@ export default function Purchase({ name, price, handleRemoveProposition }) {
     return (
         <li className="text-white mb-5">
             <div className="flex w-full justify-between items-center">
-                <div className="basket__text border-white w-full font-workSans border-b-[1px] flex justify-between px-[7px] pb-[9px] mr-[14px]">
+                <div className="basket__text border-white w-full  border-b-[1px] flex justify-between px-[7px] pb-[9px] mr-[14px]">
                     <p className="">{name}</p>
                     <div>{price + "$"}</div>
                 </div>
