@@ -69,7 +69,7 @@ export default function App() {
 
             <FullScreen propositionsRef={propositionsRef} whatBecRef={whatBecRef} statisticsRef={statisticsRef} contactsRef={contactsRef} />
             <WhatBec isMobile={isMobile} innerRef={whatBecRef} />
-            <PhotoSlider images={SLIDES} />
+            <PhotoSlider isMobile={isMobile} images={SLIDES} />
             <TdVsCs isMobile={isMobile} />
             <Opportunities isMobile={isMobile} />
             <Statistics isMobile={isMobile} innerRef={statisticsRef} />

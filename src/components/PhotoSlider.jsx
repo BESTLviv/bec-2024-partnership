@@ -9,12 +9,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
-export default function PhotoSlider({ images }) {
+export default function PhotoSlider({ isMobile, images }) {
+    let countSides = 2;
+    if (isMobile) {
+        countSides = 1;
+    }
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 2,
+        slidesToShow: countSides,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2500,

@@ -5,6 +5,7 @@ import opportunity4 from "/src/assets/opportunity4.svg"
 import opportunity5 from "/src/assets/opportunity5.svg"
 import subject1 from "/src/assets/subject1.jpg"
 import subject2 from "/src/assets/subject2.jpg"
+
 import instagram from "/src/assets/instagram.svg"
 import telegram from "/src/assets/telegram.svg"
 import linkedin from "/src/assets/linkedin.svg"
@@ -29,7 +30,7 @@ export const SUBJECTS = [
         
     },
     {
-        image: subject2,
+        image: subject2, 
         info: [
             {
                 word: 'Team Design',

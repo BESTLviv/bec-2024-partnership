@@ -216,7 +216,12 @@
   } 
   .contact-image{ 
     margin-bottom: calc(9.5px + 11.5 * (100vw - 320px) / 1120);
+    width: calc(230px + 20 * (100vw - 320px) / 1120);
+    height: calc(265px + 15 * (100vw - 320px) / 1120);
   } 
+  .contact__info{
+    
+  }
   .contact-name{ 
     font-size: calc(24px + 8 * (100vw - 320px) / 1120);
     margin-bottom: calc(7.5px + 13.5 * (100vw - 320px) / 1120);
