@@ -6,7 +6,7 @@ import { INFO_PROPOSITIONS, INFO_ADDITIONAL_PROPOSITIONS } from '../../data';
 export function Proposition({ title, points, subInfo, price, addToBasket, isActive }) {
     const [isModalVisible, setIsModalVisible] = useState(false);
 
-    let classBlock = "relative flex flex-col text-white  w-full lg:w-full lg:h-[515px] h-[454px] px-5 lg:px-[32px] bg-proposition-gradient p-5 mb-10 text-[12px] font-medium";
+    let classBlock = "relative flex flex-col text-white mb-10 lg:mb-0 w-full lg:w-full lg:h-[515px] h-[456px]  px-[25px] lg:px-[63px] bg-proposition-gradient p-5  text-[12px] font-medium";
     let classButton = "transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]  font-workSans self-center box-border text-[24px] absolute left-1/2 bg-proposition-button transform translate-y-1/2 -translate-x-1/2 bottom-0 w-[112px] h-[42px] border-solid border-2 border-white flex justify-center items-center";
 
     if (isActive) {

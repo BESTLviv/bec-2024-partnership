@@ -2,7 +2,7 @@ import Title from "./Title";
 import { SOCIALS } from "../data";
 export default function Statistics({ innerRef, isMobile }) {
 
-    let elipse = <div className="bg-ellipse w-[560px] h-[650px] -left-[-85%] -top-[-60%] absolute transform rotate-[-63.49deg] z-10  filter blur-[70px]"></div>
+    let elipse = <div className="bg-ellipse w-[560px] h-[650px] -left-[-85%] -top-[-90%] scale-[1.4] absolute transform rotate-[-63.49deg] z-10  filter blur-[70px]"></div>
     if (isMobile) {
         elipse = <div className="bg-ellipse w-[560px] h-[650px] -left-[55%] -top-[30%] absolute transform rotate-[-63.49deg] z-10  filter blur-[60px]"></div>
     }
@@ -10,7 +10,7 @@ export default function Statistics({ innerRef, isMobile }) {
     return (
 
 
-        <div ref={innerRef} className=" statistic relative  p-[50px] text-white">
+        <div ref={innerRef} className=" statistic relative  px-[50px] text-white">
             {elipse}
             <Title className="statistic__titlee relative z-20 text-center px-[20px]">СТАТИСТИКА ІВЕНТУ</Title>
 

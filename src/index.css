@@ -132,6 +132,15 @@
     transform: translate(-50%, -50%) rotate(-45deg);
   } 
 
+  @media (max-width: 800px) {
+    .custom-checkbox:checked::after {
+     
+      width: 12px;
+      height: 7px;
+     
+    } 
+  }
+
   .clicked{
     border: 2px solid rgb(245, 160, 32);
   }
@@ -222,9 +231,12 @@
   .contact-info{ 
     font-size: calc(12 * (100vw - 320px) / 1120);
   } 
-  .opportunity{
-    margin-bottom: calc(50px + 10 * (100vw - 320px) / 1120);
-}
+  @media (min-width: 1024px) {
+      .opportunity{
+        margin-bottom: calc(50px + 10 * (100vw - 320px) / 1120);
+    }
+  }
+  
   .contacts{ 
     padding-left: calc(54px + 51 * (100vw - 320px) / 1120);
     padding-right: calc(54px + 51 * (100vw - 320px) / 1120);
@@ -326,7 +338,7 @@
   }
 
   .basket{
-    margin-bottom: calc(150px + 100* (100vw - 320px) / 1120);
+    margin-bottom: calc(150px + 100 * (100vw - 320px) / 1120);
   }
   .basket__title{
     margin-bottom: calc(25px + 30 *  (100vw - 320px) / 1120);

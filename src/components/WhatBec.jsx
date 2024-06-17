@@ -5,7 +5,7 @@ import ellipse from "/src/assets/ellipse.svg"
 export default function WhatBec({ isMobile, innerRef }) {
 
     let backGroundOrange = <div className="bg-ellipse w-[416px] h-[413px] left-[-60%] transform rotate-[48.74deg] top-[-13%] absolute  z-10  filter blur-[70px] lg:opacity-0"> </div>
-    let lines = <div className="absolute bg-lines1 bg-contain  bg-no-repeat w-[2300px] h-[1500px] z-0 left-[-37.5%] transform  top-[60%]"></div>
+    let lines = <div className="absolute bg-lines1 bg-contain  bg-no-repeat w-[2300px] h-[1500px] z-10 left-[-37.5%] transform  top-[50%]"></div>
     let backGroundBlack1 = <div className="absolute bg-ellipse-black w-[1700.39px] rounded-full h-[460.22px] left-[-160%] top-[70%] z-10 filter blur-[70px] transform rotate-[-90.56deg]"></div>
     let backGroundBlack2 = <div className="absolute bg-ellipse-black w-[1700.39px] rounded-full h-[674.22px] left-[100%] top-[100%] z-10 filter blur-[70px] transform rotate-[-26.56deg]"></div>
 
@@ -37,7 +37,7 @@ export default function WhatBec({ isMobile, innerRef }) {
                 <p className="  leading-[150%]  mb-[24px]">Учасниками змагань є студенти, що зацікавлені у розв'язанні сучасних проблем та створенні інноваційних проєктів. Мета події — підвищення інтересу молоді до майбутнього розвитку інженерного напрямку. Це підніме рівень обізнаності галуззю та забезпечить наявність висококваліфікованих спеціалістів в Україні.</p>
             </div>
 
-            <a target="_blank" rel="noopener noreferrer" href="https://bec-web-2023.vercel.app/" className=" items-center justify-center flex what__button transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]  border-2  border-customOrange text-white py-[10px]">Дізнатись більше</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://bec-web-2023.vercel.app/" className=" items-center justify-center bg-black relative z-30 flex what__button transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]  border-2  border-customOrange text-white py-[10px]">Дізнатись більше</a>
         </div>
     );
 }

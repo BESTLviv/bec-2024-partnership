@@ -6,7 +6,7 @@ import { Proposition, SubProposition } from "/src/components/Propositions/Propos
 export default function Propositions({ innerRef, addToBasket, handleRemoveProposition, selectedPropositions, isMobile }) {
 
     let content = (
-        <div className=" relative z-30 mb-5 flex flex-col items-start w-full">
+        <div className=" relative z-30 mb-5 px-[25px] flex flex-col items-start w-full">
             {PROPOSITIONS.map((proposition, index) => (
                 <Proposition key={index} {...proposition} addToBasket={addToBasket} isActive={selectedPropositions.some(element => element.title === proposition.title)} ></Proposition>
             ))}
@@ -14,8 +14,13 @@ export default function Propositions({ innerRef, addToBasket, handleRemovePropos
     );
 
     let elipse = <div className="bg-ellipse w-[564px] h-[652px] left-[60%] top-[-30%] absolute scale-[1.2] transform rotate-[-63.49deg] z-10 filter blur-[70px]"></div>
+    let lines = ""
+
+
+
 
     if (!isMobile) {
+        lines = <div className="absolute bg-lines2  bg-no-repeat w-[2300px] h-[1500px] z-10s  left-[-5%] transform  top-[112%]"></div>
         content = (
             <div className="relative z-30 mb-5 flex flex-col items-start w-full">
                 <div className="flex w-full lg:mb-[91px]">
@@ -31,16 +36,18 @@ export default function Propositions({ innerRef, addToBasket, handleRemovePropos
             </div>
         );
 
-        elipse = <div className="bg-ellipse w-[564px] h-[652px] left-[-30%] top-[-10%] absolute scale-[2] transform rotate-[-63.49deg] z-10 filter blur-[70px]"></div>
+        elipse = <div className="bg-ellipse w-[564px] h-[652px] left-[-30%] top-[10%] absolute scale-[2] transform rotate-[-63.49deg] z-10 filter blur-[70px]"></div>
     }
 
     return (
         <div ref={innerRef}>
+
             <div id="propositions" className="propositions relative  text-white mx-3 flex flex-col items-center lg:mx-[72px]">
+                {lines}
                 {elipse}
                 <Title className=" relative z-30 propositions__title text-center text-wrap mx-[57px] mb-[30px] lg:mb-[64px]">ПРОПОЗИЦІЇ</Title>
                 {content}
-                <div className=" relative z-30 self-start lg:self-start  lg:mx-0">
+                <div className=" relative px-[25px] lg:px-0 z-30 self-start lg:self-start  lg:mx-0">
                     *10% отриманих коштів будуть передані на підтримку ЗСУ.<br />
                     *Оплата буде здійснюватись за курсом НБУ<br />
                     *Після завершення змагань кожна компанія–партнер отримає повну звітність з фотозвітом та aftermovie.

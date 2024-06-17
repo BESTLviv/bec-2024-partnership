@@ -1,8 +1,8 @@
 
 export default function Opportunity({ isMobile, data }) {
     return (
-        <li className=" flex justify-center opportunity w-full gap-5 items-center relative z-20 h-[90px]">
-            {isMobile == true ? <div className="  flex justify-center  items-center">
+        <li className=" flex justify-center  opportunity  w-full items-center relative z-20 h-[90px]">
+            {isMobile == true ? <div className=" shrink-0 grow-0 p-6  flex justify-center  items-center">
 
                 <img className="" src={data.image} alt="" />
             </div> : undefined}
