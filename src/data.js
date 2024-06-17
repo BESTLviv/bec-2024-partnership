@@ -424,7 +424,7 @@ export const CONTACTS = [
         name: "Ярощук Катерина",
         position: "відповідальна за корпоративні зв'язки",
         number: "+380686382823",
-        email: "yaroshchuuk@gmail.com"
+        email: "kateryna.yaroshchuk@best-eu.org"
 
     },
     {
@@ -432,7 +432,7 @@ export const CONTACTS = [
         name: "Явір Руслан",
         position: "головний організатор",
         number: "+380979517976",
-        email: "ruslanyavirs@gmail.com"
+        email: "ruslan.yavir@best-eu.org "
 
     },
     {
@@ -440,7 +440,7 @@ export const CONTACTS = [
         name: "Медзин Анна",
         position: "відповідальна за корпоративні зв'язки",
         number: "+380960625230",
-        email: "medzyn.anna@gmail.com"
+        email: "anna.medzyn@best-eu.org "
 
     },
   
