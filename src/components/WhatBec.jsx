@@ -13,7 +13,7 @@ export default function WhatBec({ isMobile, innerRef }) {
         backGroundBlack1 = ""
         backGroundBlack2 = ""
         backGroundOrange = <div className="bg-ellipse w-[416px] h-[413px] left-[-60%] transform rotate-[48.74deg] top-[-56%] absolute  z-10  filter blur-[70px] lg:opacity-0"> </div>
-        // lines = <div className="absolute  bg-mobile-lines   bg-no-repeat w-[1000px] h-[1100px] z-10 left-[0%] transform  top-[-80%]"></div>
+        lines = <div className="absolute bg-lines1   bg-no-repeat w-[1000px] h-[1100px] z-10 left-[0%] transform  top-[30%]"></div>
     }
 
 

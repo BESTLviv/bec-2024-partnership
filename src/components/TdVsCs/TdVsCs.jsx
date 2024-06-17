@@ -8,7 +8,7 @@ export default function TdVsCs({ isMobile }) {
             {/* <img className=" absolute z-30  w-[2000px] h-[2000px] transform rotate-[-27.55deg]  -top-20 -left-[200px]" src="/src/assets/lines.svg" alt="" /> */}
             {/* </div> */}
 
-            <Title className="vs__title text-center">CASE STUDY VS TEAM DESIGN</Title>
+            <Title className=" relative z-50 vs__title text-center">CASE STUDY VS TEAM DESIGN</Title>
             <div className=" bg-black p-5 lg:flex relative z-30 lg:gap-[196px]   ">
                 {SUBJECTS.map((item, index) => <Subject key={index} subject={item} isLast={index === SUBJECTS.length - 1}></Subject>)}
             </div>

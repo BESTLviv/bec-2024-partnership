@@ -4,20 +4,8 @@ import Purchase from "./Purchase";
 import emailjs from 'emailjs-com';
 import { useState, useEffect } from "react";
 
-export default function Basket({ selectedPropositions, handleRemoveProposition }) {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+export default function Basket({ isMobile, selectedPropositions, handleRemoveProposition }) {
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 1024);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
     const [companyName, setCompanyName] = useState("");
     const [emailName, setEmailName] = useState("");
     const [emailError, setEmailError] = useState("");
@@ -90,9 +78,15 @@ export default function Basket({ selectedPropositions, handleRemoveProposition }
         <button onClick={sendEmail} className="basket__submit mt-[30px] self-center text-white border-2 border-white flex justify-center items-center h-[40px] w-[161px] lg:h-[40px] lg:w-[195px] transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]">Оформити</button>
     </div>
 
+    let lines = <div className="absolute bg-lines2 bg-contain  bg-no-repeat w-[2300px] h-[1500px] z-0  left-[5%] transform  top-[-115%]"></div>
+
+    if (isMobile) {
+        lines = <div className="absolute bg-lines2 bg-contain  bg-no-repeat w-[2300px] h-[1500px] z-0  left-[0%] transform  top-[-95%]"></div>
+    }
+
     return (
         <div className="basket relative ">
-            <div className="absolute bg-lines2 bg-contain  bg-no-repeat w-[2300px] h-[1500px] z-0  left-[5%] transform  top-[-115%]"></div>
+            {lines}
 
             <div className="absolute bg-ellipse-black w-[1700.39px] rounded-full h-[460.22px] left-[-50%] top-[-70%] z-10 filter blur-[70px] transform rotate-[-90.56deg]"></div>
             <div className="absolute bg-ellipse-black w-[1700.39px] rounded-full h-[674.22px] left-[50%] top-[-100%] z-10 filter blur-[70px] transform rotate-[-90.56deg]"></div>

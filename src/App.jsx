@@ -79,7 +79,7 @@ export default function App() {
 
 
 
-            <Basket selectedPropositions={selectedPropositions} handleRemoveProposition={handleRemoveProposition} />
+            <Basket isMobile={isMobile} selectedPropositions={selectedPropositions} handleRemoveProposition={handleRemoveProposition} />
             <Partners />
             <Aboutbest />
             <Contacts innerRef={contactsRef} />
