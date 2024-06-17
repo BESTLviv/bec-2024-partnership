@@ -186,12 +186,12 @@ export function Modal({ isVisible, onClose, children }) {
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
-            <div id="customModal" className="modal custom-scrollbar overflow-y-auto w-[75%] h-[75%] bg-proposition-gradient p-8 relative border-4 border-propositionBorder">
+            <div id="customModal" className=" flex flex-col modal custom-scrollbar overflow-y-auto w-[75%] h-[75%] bg-proposition-gradient p-8 pt-[9px] relative border-4 border-propositionBorder">
                 <button
-                    className="block absolute top-2 right-2 text-gray-600 hover:text-gray-900"
+                    className=" self-end block  text-gray-600 hover:text-gray-900"
                     onClick={onClose}
                 >
-                    <img className="white-cross" src="/src/assets/whiteCross.svg" alt="Close" />
+                    <img className="white-cross " src="/src/assets/whiteCross.svg" alt="Close" />
                 </button>
                 <div>
                     {children}

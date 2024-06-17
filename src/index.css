@@ -167,8 +167,8 @@
     padding: calc(25px + 25 * (100vw - 320px) / 1120);
   }
   .white-cross{
-    width: calc(20px + 26 * (100vw - 320px) / 1120);
-    height: calc(20px + 26 * (100vw - 320px) / 1120);
+    width: calc(11px + 15 * (100vw - 320px) / 1120);
+    height: calc(11px + 15 * (100vw - 320px) / 1120);
     
   
   }
