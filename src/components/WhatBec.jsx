@@ -13,9 +13,9 @@ export default function WhatBec({ isMobile, innerRef }) {
         backGroundBlack1 = ""
         backGroundBlack2 = ""
         backGroundOrange = <div className="bg-ellipse w-[416px] h-[413px] left-[-60%] transform rotate-[48.74deg] top-[-56%] absolute  z-10  filter blur-[70px] lg:opacity-0"> </div>
-        lines = <div className="absolute bg-lines1   bg-no-repeat w-[1000px] h-[1100px] z-10 left-[0%] transform  top-[30%]"></div>
-    }
+        lines = <div className="absolute bg-linesMob step1:bg-[length:750px_1600px] bg-[length:600px_1250px] step1:top-[0%] left-[0%] top-[40%]   step2:bg-[length:900px_1700px] step2:top-[-10%] step3:bg-[length:1250px_2200px] step3:top-[-90%]  bg-no-repeat  w-[1200px] h-[2100px] z-10  transform  "></div>
 
+    }
 
     return (
         <div ref={innerRef} className="what flex flex-col items-center self-center relative text-white px-[50px]   ">

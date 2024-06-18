@@ -6,8 +6,13 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'step01': '490px',
+        'step1': '590px',
+        'step2': '750px',
+        'step3': '900px',
         '1090xl': '1090px',
         '3xl': '1300px',
+
       },
       backgroundImage: {
         'full-screen': "url('../assets/full-screen.png')",
@@ -27,7 +32,8 @@ module.exports = {
         "lgFull": "gradient(linear, 270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 90.86%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
         'girl': "url('/src/assets/girl.svg')",
         "lg-full-screen" : "url('/src/assets/lgFull.svg')",
-        
+        "linesMob" : "url('/src/assets/linesMob.svg')",
+        "linesMob2" : "url('/src/assets/linesMob2.svg')",
 
       },
       filter: {

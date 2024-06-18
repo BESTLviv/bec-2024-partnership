@@ -14,7 +14,7 @@ export default function Propositions({ innerRef, addToBasket, handleRemovePropos
     );
 
     let elipse = <div className="bg-ellipse w-[564px] h-[652px] left-[60%] top-[-30%] absolute scale-[1.2] transform rotate-[-63.49deg] z-10 filter blur-[70px]"></div>
-    let lines = ""
+    let lines = <div className="absolute bg-linesMob2 bg-[length:800px_1250px] top-[-33%] left-[-60%] step01:bg-[length:1000px_1250px] step01:top-[-34%] step01:left-[-50%] step1:bg-[length:1270px_1250px]  step1:top-[-36%] step1:left-[-36%]    step2:bg-[length:1470px_1550px] step2:top-[-44%] step2:left-[-26%] step3:bg-[length:1590px_1550px] step3:top-[-44%] step3:left-[-16%]  bg-no-repeat  w-[1200px] h-[2100px] z-10  transform rotate-[16.38deg]  "></div>
 
 
 
