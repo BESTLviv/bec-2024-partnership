@@ -1293,6 +1293,10 @@ video {
   width: 100%;
 }
 
+.w-\[350px\] {
+  width: 350px;
+}
+
 .max-w-\[246px\] {
   max-width: 246px;
 }
@@ -1357,8 +1361,23 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-\[6px\] {
-  --tw-translate-y: 6px;
+.translate-y-\[15px\] {
+  --tw-translate-y: 15px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[5px\] {
+  --tw-translate-y: 5px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[10px\] {
+  --tw-translate-y: 10px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[4px\] {
+  --tw-translate-y: 4px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2635,114 +2654,42 @@ input[type="checkbox"] {
 }
 
 @media (min-width: 750px) {
-  .step2\:left-\[-36\%\] {
-    left: -36%;
+  .step2\:left-\[-26\%\] {
+    left: -26%;
   }
 
   .step2\:top-\[-10\%\] {
     top: -10%;
   }
 
-  .step2\:top-\[-36\%\] {
-    top: -36%;
-  }
-
-  .step2\:left-\[-20\%\] {
-    left: -20%;
-  }
-
-  .step2\:left-\[-25\%\] {
-    left: -25%;
-  }
-
-  .step2\:left-\[-26\%\] {
-    left: -26%;
-  }
-
-  .step2\:top-\[-40\%\] {
-    top: -40%;
-  }
-
-  .step2\:top-\[-43\%\] {
-    top: -43%;
-  }
-
   .step2\:top-\[-44\%\] {
     top: -44%;
-  }
-
-  .step2\:bg-\[length\:900px_1700px\] {
-    background-size: 900px 1700px;
-  }
-
-  .step2\:bg-\[length\:900px_1800px\] {
-    background-size: 900px 1800px;
-  }
-
-  .step2\:bg-\[length\:900px_1900px\] {
-    background-size: 900px 1900px;
-  }
-
-  .step2\:bg-\[length\:1270px_1250px\] {
-    background-size: 1270px 1250px;
-  }
-
-  .step2\:bg-\[length\:1370px_1250px\] {
-    background-size: 1370px 1250px;
-  }
-
-  .step2\:bg-\[length\:1370px_1550px\] {
-    background-size: 1370px 1550px;
-  }
-
-  .step2\:bg-\[length\:1370px_1750px\] {
-    background-size: 1370px 1750px;
-  }
-
-  .step2\:bg-\[length\:1170px_1750px\] {
-    background-size: 1170px 1750px;
-  }
-
-  .step2\:bg-\[length\:1170px_1550px\] {
-    background-size: 1170px 1550px;
   }
 
   .step2\:bg-\[length\:1470px_1550px\] {
     background-size: 1470px 1550px;
   }
+
+  .step2\:bg-\[length\:900px_1700px\] {
+    background-size: 900px 1700px;
+  }
 }
 
 @media (min-width: 900px) {
-  .step3\:top-\[-90\%\] {
-    top: -90%;
+  .step3\:left-\[-16\%\] {
+    left: -16%;
   }
 
   .step3\:top-\[-44\%\] {
     top: -44%;
   }
 
-  .step3\:left-\[-16\%\] {
-    left: -16%;
-  }
-
-  .step3\:left-\[-6\%\] {
-    left: -6%;
-  }
-
-  .step3\:left-\[-14\%\] {
-    left: -14%;
+  .step3\:top-\[-90\%\] {
+    top: -90%;
   }
 
   .step3\:bg-\[length\:1250px_2200px\] {
     background-size: 1250px 2200px;
-  }
-
-  .step3\:bg-\[length\:1470px_1550px\] {
-    background-size: 1470px 1550px;
-  }
-
-  .step3\:bg-\[length\:1570px_1550px\] {
-    background-size: 1570px 1550px;
   }
 
   .step3\:bg-\[length\:1590px_1550px\] {

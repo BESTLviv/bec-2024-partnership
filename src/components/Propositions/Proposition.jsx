@@ -62,10 +62,15 @@ export function SubProposition({ isMobile, text, price, addToBasket, handleRemov
 
     let classBlock = "relative flex items-center justify-center text-white w-full lg:w-full p-[15px] bg-proposition-gradient lg:mb-[22px] mb-[10px] lg:px-[32px] lg:py-[19px] text-[14px] transition-transform transform-gpu duration-[400ms]";
     let classButton = "flex-grow-0 flex-shrink-0 add-proposition__button font-workSans box-border text-[14px] lg:text-[20px] relative bg-proposition-button border-[1px] flex justify-center items-center self-center mr-3 lg:mr-5";
-
+    let classCheckBox = "mr-[12px] lg:mr-[20px] self-center custom-checkbox translate-y-[5px]  h-[10px] w-[10px] lg:h-[24px] lg:w-[24px] focus:outline-none"
+    let classText = "add-proposition__name break-words pr-[35px] w-[350px]   lg:w-aut"
     if (isActive) {
         classBlock += " clicked";
         classButton += " clicked";
+    }
+
+    if (special) {
+        classCheckBox = "mr-[12px] lg:mr-[20px] self-center custom-checkbox transform translate-y-[10px]  h-[10px] w-[10px] lg:h-[24px] lg:w-[24px] focus:outline-none"
     }
 
     let extra =
@@ -91,10 +96,12 @@ export function SubProposition({ isMobile, text, price, addToBasket, handleRemov
 
 
     if (!isMobile || special == null) {
+        classCheckBox = "mr-[12px] lg:mr-[20px] self-center custom-checkbox transform translate-y-[4px]  h-[10px] w-[10px] lg:h-[24px] lg:w-[24px] focus:outline-none"
+        classText = "add-proposition__name break-words pr-[35px] lg:w-aut"
         buttons = <div className='flex flex-col lg:flex-row'>
 
             {special && extra}
-            <div className='flex '>
+            <div className='flex justify-center items-center '>
                 <button className={classButton}>
                     {price}$
                 </button>
@@ -120,16 +127,16 @@ export function SubProposition({ isMobile, text, price, addToBasket, handleRemov
                     </div>)}
             </Modal>
             <div className={classBlock}>
-                <div className="flex items-center justify-center self-start transform translate-y-[6px]">
+                <div className="flex items-center justify-center self-start ">
                     <input
                         type="checkbox"
                         checked={isActive}
                         onChange={handleCheckboxChange}
-                        className="mr-[12px] lg:mr-[20px] custom-checkbox h-[10px] w-[10px] lg:h-[24px] lg:w-[24px] focus:outline-none"
+                        className={classCheckBox}
                     />
                 </div>
                 <div className="flex-grow">
-                    <p className="add-proposition__name break-words pr-[35px]   lg:w-aut">{text}</p>
+                    <p className={classText}>{text}</p>
                 </div>
 
                 {buttons}
