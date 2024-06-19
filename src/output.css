@@ -1241,10 +1241,6 @@ video {
   width: 320px;
 }
 
-.w-\[350px\] {
-  width: 350px;
-}
-
 .w-\[40\%\] {
   width: 40%;
 }
@@ -1303,6 +1299,10 @@ video {
 
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-shrink-0 {
@@ -1462,6 +1462,10 @@ video {
 
 .transform-gpu {
   transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .resize {
@@ -1764,11 +1768,6 @@ video {
   padding-right: 50px;
 }
 
-.px-\[54px\] {
-  padding-left: 54px;
-  padding-right: 54px;
-}
-
 .px-\[7px\] {
   padding-left: 7px;
   padding-right: 7px;
@@ -1832,10 +1831,6 @@ video {
 
 .font-workSans {
   font-family: WorkSans;
-}
-
-.text-\[10px\] {
-  font-size: 10px;
 }
 
 .text-\[12px\] {
@@ -2197,8 +2192,6 @@ video {
 }
 
 .contacts{
-  padding-left: calc(55px + 50 * (100vw - 320px) / 1120);
-  padding-right: calc(55px + 50 * (100vw - 320px) / 1120);
 }
 
 .footer{
@@ -2217,13 +2210,22 @@ video {
 }
 
 .footer__social{
-  width: calc(15px + 10  * (100vw - 320px) / 1120);
-  height: calc(15px + 10 * (100vw - 320px) / 1120);
+  width: calc(18px + 7  * (100vw - 320px) / 1120);
+  height: calc(18px + 7 * (100vw - 320px) / 1120);
 }
 
-.contact{
-  width: calc(281px + 81 * (100vw - 320px) / 1120);
-  height: calc(441px + 63 * (100vw - 320px) / 1120);
+@media (min-width: 1024px) {
+  .contact2{
+    width: calc(281px + 81 * (100vw - 320px) / 1120);
+    height: calc(461px + 63 * (100vw - 320px) / 1120);
+  }
+}
+
+@media (max-width: 1023px) {
+  .contact1{
+    width: calc(281px + 81 * (100vw - 320px) / 1120);
+    height: calc(441px + 63 * (100vw - 320px) / 1120);
+  }
 }
 
 .contact-image{
@@ -2236,8 +2238,9 @@ video {
 }
 
 .contact-name{
-  font-size: calc(24px + 8 * (100vw - 320px) / 1120);
+  font-size: calc(22px + 8 * (100vw - 320px) / 1120);
   margin-bottom: calc(7.5px + 13.5 * (100vw - 320px) / 1120);
+  text-align: center;
 }
 
 .contact-role{
@@ -2588,6 +2591,12 @@ input[type="checkbox"] {
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
 }
 
+.hover\:scale-\[1\.04\]:hover {
+  --tw-scale-x: 1.04;
+  --tw-scale-y: 1.04;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:scale-\[1\.1\]:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -2603,6 +2612,18 @@ input[type="checkbox"] {
 .hover\:scale-\[1\.3\]:hover {
   --tw-scale-x: 1.3;
   --tw-scale-y: 1.3;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-\[1\.05\]:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-\[1\.02\]:hover {
+  --tw-scale-x: 1.02;
+  --tw-scale-y: 1.02;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2937,6 +2958,10 @@ input[type="checkbox"] {
     flex-direction: column;
   }
 
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
   .lg\:items-center {
     align-items: center;
   }
@@ -2947,6 +2972,10 @@ input[type="checkbox"] {
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-\[160px\] {
@@ -2982,11 +3011,6 @@ input[type="checkbox"] {
     padding-right: 0px;
   }
 
-  .lg\:px-\[105px\] {
-    padding-left: 105px;
-    padding-right: 105px;
-  }
-
   .lg\:px-\[140px\] {
     padding-left: 140px;
     padding-right: 140px;
@@ -2995,6 +3019,11 @@ input[type="checkbox"] {
   .lg\:px-\[180px\] {
     padding-left: 180px;
     padding-right: 180px;
+  }
+
+  .lg\:px-\[30px\] {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .lg\:px-\[32px\] {
@@ -3089,25 +3118,6 @@ input[type="checkbox"] {
   .\31 090xl\:before\:w-\[8px\]::before {
     content: var(--tw-content);
     width: 8px;
-  }
-}
-
-@media (min-width: 1300px) {
-  .\33xl\:flex-row {
-    flex-direction: row;
-  }
-
-  .\33xl\:items-start {
-    align-items: flex-start;
-  }
-
-  .\33xl\:justify-between {
-    justify-content: space-between;
-  }
-
-  .\33xl\:px-\[47px\] {
-    padding-left: 47px;
-    padding-right: 47px;
   }
 }
 

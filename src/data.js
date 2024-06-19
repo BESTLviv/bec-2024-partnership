@@ -180,7 +180,7 @@ export const PROPOSITIONS = [
                 text: "Постійний доступ до змагань ",
             },
             {
-                text: "Розсилка вакансій у Telegram боті ",
+                text: "Розсилка вакансій у Telegram-боті ",
             },
             {
                 text: "Стаття про компанію на сайті події ",
@@ -208,7 +208,7 @@ export const PROPOSITIONS = [
                 text: "День з компанією ",
             },
             {
-                text: "Розсилка вакансій у Telegram боті ",
+                text: "Розсилка вакансій у Telegram-боті ",
             },
             {
                 text: "Подкаст з представником компанії",
@@ -269,7 +269,7 @@ export const INFO_PROPOSITIONS = [
                 description: "Представники та представниці Вашої компанії матимуть змогу без обмежень знаходитися на місці проведення змагань.  "
             },
             {
-                text: "Розсилка вакансій у Telegram боті ",
+                text: "Розсилка вакансій у Telegram-боті ",
                 description: "Піврічна розсилка вакансій компанії у нашому Telegram-боті, що призначений для реєстрації, важливих анонсів та комунікації під час події.  "
             },
             {
@@ -324,7 +324,7 @@ export const INFO_PROPOSITIONS = [
                 description: "Після проведення події Instagram–stories нашої сторінки будуть наповнені контентом Вашої компанії. Ви можете надіслати свої відео або ж наша команда допоможе у їх створенні. Таких сторіз буде до 5–ти."
             },
             {
-                text: "Розсилка вакансій у Telegram боті ",
+                text: "Розсилка вакансій у Telegram-боті ",
                 description: "Розсилка вакансій компанії у нашому Telegram-боті, що призначений для реєстрації, важливих анонсів та комунікації під час події."
             },
             {
@@ -342,7 +342,7 @@ export const ADDITIONAL_PROPOSITIONS = [
         price: "100",
     },
     {
-        text: "Розсилка вакансій у Telegram боті",
+        text: "Розсилка вакансій у Telegram-боті",
         price: "100",
     },
     {
@@ -423,7 +423,7 @@ export const CONTACTS = [
     {
         image: katya,
         name: "Ярощук Катерина",
-        position: "відповідальна за корпоративні зв'язки",
+        position: "Відповідальна за корпоративні зв'язки",
         number: "+380686382823",
         email: "kateryna.yaroshchuk@best-eu.org"
 
@@ -431,7 +431,7 @@ export const CONTACTS = [
     {
         image: rula,
         name: "Явір Руслан",
-        position: "головний організатор",
+        position: "Головний організатор",
         number: "+380979517976",
         email: "ruslan.yavir@best-eu.org "
 
@@ -439,7 +439,7 @@ export const CONTACTS = [
     {
         image: anya,
         name: "Медзин Анна",
-        position: "відповідальна за корпоративні зв'язки",
+        position: "Відповідальна за корпоративні зв'язки",
         number: "+380960625230",
         email: "anna.medzyn@best-eu.org "
 
