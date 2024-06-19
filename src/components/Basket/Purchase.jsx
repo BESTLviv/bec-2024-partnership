@@ -10,7 +10,7 @@ export default function Purchase({ name, price, handleRemoveProposition }) {
                     <div>{price + "$"}</div>
                 </div>
                 <button onClick={() => { name !== "Solid Base" ? handleRemoveProposition(name) : "" }}>
-                    <img className=" lg:w-[30px] lg:h-[30px] transition-transform transform-gpu duration-[400ms] hover:scale-[1.3]" src={cross} alt="Remove" />
+                    <img className=" scale-[1.3] lg:scale-[1]  w-[20px] h-[20px] lg:w-[30px] lg:h-[30px] transition-transform transform-gpu duration-[400ms] hover:scale-[1.3]" src={cross} alt="Remove" />
                 </button>
             </div>
         </li>

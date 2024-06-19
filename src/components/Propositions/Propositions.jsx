@@ -8,7 +8,7 @@ export default function Propositions({ innerRef, addToBasket, handleRemovePropos
     let content = (
         <div className=" relative z-30 mb-5 px-[25px] flex flex-col items-start w-full">
             {PROPOSITIONS.map((proposition, index) => (
-                <Proposition key={index} {...proposition} addToBasket={addToBasket} isActive={selectedPropositions.some(element => element.title === proposition.title)} ></Proposition>
+                <Proposition key={index} {...proposition} handleRemoveProposition={handleRemoveProposition} addToBasket={addToBasket} isActive={selectedPropositions.some(element => element.title === proposition.title)} ></Proposition>
             ))}
         </div>
     );
@@ -24,14 +24,14 @@ export default function Propositions({ innerRef, addToBasket, handleRemovePropos
         content = (
             <div className="relative z-30 mb-5 flex flex-col items-start w-full">
                 <div className="flex w-full lg:mb-[91px]">
-                    <Proposition addToBasket={addToBasket} {...PROPOSITIONS[0]} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[0].title)}></Proposition>
+                    <Proposition addToBasket={addToBasket} {...PROPOSITIONS[0]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[0].title)}></Proposition>
                 </div>
                 <div className="flex w-full lg:gap-[37px] lg:mb-[91px]">
-                    <Proposition addToBasket={addToBasket} {...PROPOSITIONS[1]} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[1].title)}></Proposition>
-                    <Proposition addToBasket={addToBasket} {...PROPOSITIONS[2]} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[2].title)}></Proposition>
+                    <Proposition addToBasket={addToBasket} {...PROPOSITIONS[1]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[1].title)}></Proposition>
+                    <Proposition addToBasket={addToBasket} {...PROPOSITIONS[2]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[2].title)}></Proposition>
                 </div>
                 <div className="flex w-full lg:mb-[91px]">
-                    <Proposition addToBasket={addToBasket} {...PROPOSITIONS[3]} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[3].title)}></Proposition>
+                    <Proposition addToBasket={addToBasket} {...PROPOSITIONS[3]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[3].title)}></Proposition>
                 </div>
             </div>
         );
