@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'portraitt': '375px',
         'step01': '490px',
         'step1': '590px',
         'step2': '750px',

@@ -11,11 +11,11 @@ export default function Portrait({ isMobile }) {
     ]
 
     return (
-        <div className="portrait relative z-30 flex flex-col items-center text-white mx-[25px]">
+        <div className="portrait relative z-30 flex flex-col items-center text-white px-[25px]">
             {elipse}
             <Title className=" portrait__title text-center relative z-20 mx-[65px]">ПОРТРЕТ УЧАСНИКА</Title>
-            <div className=" flex flex-col 1090xl:flex-row 1090xl:gap-[170px] 1090xl:justify-center">
-                <div className=" mb-[30px]">
+            <div className=" flex flex-col 1090xl:flex-row 1090xl:gap-[170px] 1090xl:justify-center ">
+                <div className=" mb-[30px] px-5 portraitt:px-0 ">
                     <p className="partner__title font-daysOne leading-7 mb-[9px]">Студент НУ “ЛП”</p>
                     <p className="partner__title font-daysOne mb-[13px]">Вік: <span className=" partner__span-title">17-21</span> </p>
                     <p className="partner__sub-title font-daysOne mb-[14px]">Спеціальності:</p>
