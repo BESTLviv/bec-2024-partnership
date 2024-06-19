@@ -11,14 +11,20 @@ export default function Contact({ image, name, position, number, email }) {
                 </div>
 
                 <div className="  contact-border w-full border-b-[1px] border-white"></div>
-                <div className=" contact-info   flex items-center self-start mb-[10px]">
-                    <img className="mr-2" src={phone} alt="" />
-                    <p>{number}</p>
-                </div>
-                <div className=" contact-info h-5 flex items-center self-start mb-[24px]">
-                    <img className="mr-2" src={emailImg} alt="" />
-                    <p>{email}</p>
-                </div>
+                <a className="self-start" href={`tel:${number}`}>
+                    <div className=" contact-info flex items-center t mb-[10px]">
+                        <img className="mr-2" src={phone} alt="" />
+                        <p>{number}</p>
+                    </div>
+                </a>
+                <a className="self-start" href={`mailto:${email}`}>
+                    <div className=" contact-info h-5 flex items-center  mb-[24px]">
+                        <img className="mr-2" src={emailImg} alt="" />
+
+
+                        <p>{email}</p>
+                    </div>
+                </a>
             </div>
         </li>
     );
