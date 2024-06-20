@@ -798,6 +798,18 @@ video {
   top: 70%;
 }
 
+.-left-\[65\%\] {
+  left: -65%;
+}
+
+.-left-\[75\%\] {
+  left: -75%;
+}
+
+.-left-\[95\%\] {
+  left: -95%;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -997,6 +1009,10 @@ video {
   margin-bottom: 9px;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .ml-5 {
   margin-left: 1.25rem;
 }
@@ -1039,6 +1055,14 @@ video {
 
 .mt-\[50px\] {
   margin-top: 50px;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mr-9 {
+  margin-right: 2.25rem;
 }
 
 .box-border {
@@ -2034,9 +2058,23 @@ video {
   background-blend-mode: multiply;
 }
 
-.bec-image {
-  width: calc(420px + 320 * (100vw - 320px) / 1120);
-  height: calc(440px + 280 * (100vw - 320px) / 1120);
+/* .bec-image { 
+    width: calc(420px + 320 * (100vw - 320px) / 1120);
+    height: calc(440px + 280 * (100vw - 320px) / 1120);
+  } */
+
+@media (min-width: 1024px) {
+  .bec-image {
+    width: 580px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bec-image {
+    width: 680px;
+    height: 700px;
+  }
 }
 
 #opportunities{
@@ -2277,7 +2315,15 @@ video {
 
 @media (min-width: 1024px) {
   .opportunity{
-    margin-bottom: calc(50px + 10 * (100vw - 320px) / 1120);
+    top: -2.5%;
+    margin-bottom: calc(36px + 10 * (100vw - 320px) / 1120);
+  }
+}
+
+@media (min-width: 1440px) {
+  .opportunity{
+    top: -1%;
+    margin-bottom: calc(55px + 10 * (100vw - 320px) / 1120);
   }
 }
 
@@ -2996,6 +3042,10 @@ input[type="checkbox"] {
     justify-content: normal;
   }
 
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
   .lg\:justify-center {
     justify-content: center;
   }
@@ -3144,13 +3194,6 @@ input[type="checkbox"] {
   .\31 090xl\:before\:w-\[8px\]::before {
     content: var(--tw-content);
     width: 8px;
-  }
-}
-
-@media (orientation: portrait) {
-  .portrait\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
 

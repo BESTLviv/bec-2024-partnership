@@ -15,7 +15,7 @@ export default function Opportunities({ isMobile, children, word }) {
         content =
             <div className="flex">
                 <img className="bec-image py-5" src={aboutBec} alt="" />
-                <ol className=" lg:pl-4 w-full lg:flex lg:flex-col lg:justify-center ">
+                <ol className=" lg:pl-4 w-full lg:flex lg:flex-col lg:justify-start lg:items-start ">
                     {OPPORTUNITIES.map((opportunity, index) => <Opportunity key={index} data={opportunity}></Opportunity>)}
                 </ol>
             </div>

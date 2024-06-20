@@ -4,7 +4,7 @@ export default function Statistics({ innerRef, isMobile }) {
 
     let elipse = <div className="bg-ellipse w-[560px] h-[650px] -left-[-85%] -top-[-90%] scale-[1.4] absolute transform rotate-[-63.49deg] z-10  filter blur-[70px]"></div>
     if (isMobile) {
-        elipse = <div className="bg-ellipse w-[560px] h-[650px] -left-[55%] -top-[30%] absolute transform rotate-[-63.49deg] z-10  filter blur-[60px]"></div>
+        elipse = <div className="bg-ellipse w-[560px] h-[650px] -left-[65%] -top-[30%] absolute transform rotate-[-63.49deg] z-10  filter blur-[60px]"></div>
     }
 
     return (
