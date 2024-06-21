@@ -37,7 +37,7 @@ export default function WhatBec({ isMobile, innerRef }) {
                 <p className="  leading-[150%]  mb-[24px]">Учасниками змагань є студенти, що зацікавлені у розв'язанні сучасних проблем та створенні інноваційних проєктів. Мета події — підвищення інтересу молоді до майбутнього розвитку інженерного напрямку. Це підніме рівень обізнаності галуззю та забезпечить наявність висококваліфікованих спеціалістів в Україні.</p>
             </div>
 
-            <a target="_blank" rel="noopener noreferrer" href="https://bec-web-2023.vercel.app/" className=" items-center justify-center bg-black relative z-30 flex what__button transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]  border-2  border-customOrange text-white py-[10px]">Дізнатись більше</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://bec-web-2024.vercel.app/" className=" items-center justify-center bg-black relative z-30 flex what__button transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]  border-2  border-customOrange text-white py-[10px]">Дізнатись більше</a>
         </div>
     );
 }
