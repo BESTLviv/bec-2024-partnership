@@ -119,7 +119,7 @@ export default function FullScreen({ propositionsRef, whatBecRef, statisticsRef,
             <div id="info" className="relative top-1/2 transform translate-y-[-50%] flex-grow flex flex-col justify-center mx-[50px] mb-[40px] text-white">
                 <h2 className="text-white text-header font-daysOne mb-[18px]">BEST Engineering Competition</h2>
                 <h3 className="text-white font-jura leading-[33px] text-[28px]">25-29 жовтня</h3>
-                <button onClick={handleScrollToPropositions} style={{ fontSize: 'calc(16px + 4 * (100vw - 320px) / 1120)' }} className="transition-transform transform-gpu duration-[400ms] hover:scale-[1.1] block font-workSans bg-customOrange text-black p-[10px]">Стати партнером</button>
+                <button onClick={handleScrollToPropositions} style={{ fontSize: 'calc(16px + 4 * (100vw - 320px) / 1120)' }} className="transition-transform transform-gpu duration-[400ms] hover:scale-[1.1] block  bg-customOrange text-black p-[10px]">Стати партнером</button>
             </div>
         </div>
     );
