@@ -399,21 +399,21 @@
     "title": "contacts",
     "contacts": [
     {
-        "image": "katya.png",
+        "image": "/assets/katya.png",
         "name": "Kateryna Yaroshchuk",
         "position": "Responsible for corporate relationships",
         "number": "+380686382823",
         "email": "kateryna.yaroshchuk@best-eu.org"
     },
     {
-        "image": "rula.png",
+        "image": "/assets/rula.png",
         "name": "Ruslan Yavir",
         "position": "Main organiser",
         "number": "+380979517976",
         "email": "ruslan.yavir@best-eu.org"
     },
     {
-        "image": "anya.png",
+        "image": "/assets/anya.png",
         "name": "Anna Medzyn",
         "position": "Responsible for corporate relationships",
         "number": "+380960625230",

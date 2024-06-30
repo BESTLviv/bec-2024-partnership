@@ -389,21 +389,21 @@
     "title": "Контакти",
     "contacts": [
     {
-        "image": "/src/assets/katya.png",
+        "image": "/assets/katya.png",
         "name": "Ярощук Катерина",
         "position": "Відповідальна за корпоративні зв'язки",
         "number": "+380686382823",
         "email": "kateryna.yaroshchuk@best-eu.org"
     },
     {
-        "image": "/src/assets/rula.png",
+        "image": "/assets/rula.png",
         "name": "Явір Руслан",
         "position": "Головний організатор",
         "number": "+380979517976",
         "email": "ruslan.yavir@best-eu.org"
     },
     {
-        "image": "/src/assets/anya.png",
+        "image": "/assets/anya.png",
         "name": "Медзин Анна",
         "position": "Відповідальна за корпоративні зв'язки",
         "number": "+380960625230",

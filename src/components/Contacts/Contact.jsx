@@ -6,7 +6,7 @@ export default function Contact({ image, name, position, number, email }) {
             <div className=" flex flex-col h-full items-center px-6 lg:px-[30px]">
                 <img className="contact-image object-cover w-full max-h-[283px]" src={image} alt="" />
                 <div className=" flex-1">
-                    <p className=" contact-name ">{name}</p>
+                    <p className=" text-nowrap contact-name ">{name}</p>
                     <p className=" text-center  contact-role ">{position}</p>
                 </div>
 
