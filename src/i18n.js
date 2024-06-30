@@ -21,7 +21,7 @@ i18n
       }
     },
     lng: 'ua', // Мова за замовчуванням
-    fallbackLng: 'en',
+    fallbackLng: 'ua',
     interpolation: {
       escapeValue: false
     },
