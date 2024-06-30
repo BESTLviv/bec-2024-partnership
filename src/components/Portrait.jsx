@@ -1,5 +1,5 @@
 import Title from "./Title";
-import { SPECIALITY } from "/src/data.js";
+
 import portrait1 from '/src/assets/portrait1.png'
 import portrait2 from '/src/assets/portrait2.png'
 import Points from "./Points";

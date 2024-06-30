@@ -1,7 +1,5 @@
 import Title from "../Title";
-import { OPPORTUNITIES } from "/src/data.js";
 import Opportunity from "./Opportunity";
-import { useState, useEffect } from 'react';
 import aboutBec from "/src/assets/aboutBec.svg"
 import { useTranslation } from "react-i18next";
 export default function Opportunities({ isMobile }) {

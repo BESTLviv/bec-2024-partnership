@@ -1,6 +1,6 @@
 import Title from "../Title";
 import Subject from "./Subject";
-import { SUBJECTS } from "/src/data.js";
+
 import { useTranslation } from "react-i18next";
 
 export default function TdVsCs() {

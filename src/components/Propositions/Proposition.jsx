@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Points from "../Points";
 import { useEffect } from 'react';
-import { INFO_PROPOSITIONS, INFO_ADDITIONAL_PROPOSITIONS } from '../../data';
+
 import { useTranslation } from 'react-i18next';
 const CORE_PROPOSITION = "Solid Base";
 

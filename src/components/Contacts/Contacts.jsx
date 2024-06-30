@@ -1,5 +1,4 @@
 import Title from "../Title";
-import { CONTACTS } from "/src/data.js";
 import Contact from "./Contact";
 import { useTranslation } from "react-i18next";
 export default function Contacts({ innerRef }) {

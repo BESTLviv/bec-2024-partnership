@@ -1,5 +1,4 @@
 import Title from "../Title";
-import { PROPOSITIONS, ADDITIONAL_PROPOSITIONS } from "/src/data.js";
 import Purchase from "./Purchase";
 import emailjs from 'emailjs-com';
 import { useState, useEffect } from "react";

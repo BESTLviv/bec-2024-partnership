@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Title from "../Title";
-import { PROPOSITIONS, ADDITIONAL_PROPOSITIONS } from "/src/data.js";
 import { Proposition, SubProposition } from "/src/components/Propositions/Proposition.jsx";
 import { useTranslation } from 'react-i18next';
 
@@ -28,14 +27,14 @@ export default function Propositions({ innerRef, addToBasket, handleRemovePropos
         content = (
             <div className="relative z-30 mb-5 flex flex-col items-start w-full">
                 <div className="flex w-full lg:mb-[91px]">
-                    <Proposition addToBasket={addToBasket} proposition={propositions[0]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[0].title)}></Proposition>
+                    <Proposition addToBasket={addToBasket} proposition={propositions[0]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === propositions.title)}></Proposition>
                 </div>
                 <div className="flex w-full lg:gap-[37px] lg:mb-[91px]">
-                    <Proposition addToBasket={addToBasket} proposition={propositions[1]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[1].title)}></Proposition>
-                    <Proposition addToBasket={addToBasket} proposition={propositions[2]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[2].title)}></Proposition>
+                    <Proposition addToBasket={addToBasket} proposition={propositions[1]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === propositions.title)}></Proposition>
+                    <Proposition addToBasket={addToBasket} proposition={propositions[2]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === propositions.title)}></Proposition>
                 </div>
                 <div className="flex w-full lg:mb-[91px]">
-                    <Proposition addToBasket={addToBasket} proposition={propositions[3]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === PROPOSITIONS[3].title)}></Proposition>
+                    <Proposition addToBasket={addToBasket} proposition={propositions[3]} handleRemoveProposition={handleRemoveProposition} isActive={selectedPropositions.some(element => element.title === propositions.title)}></Proposition>
                 </div>
             </div>
         );

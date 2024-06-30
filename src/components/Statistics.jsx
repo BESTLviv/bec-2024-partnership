@@ -1,5 +1,5 @@
 import Title from "./Title";
-import { SOCIALS } from "../data";
+import { SOCIALS } from "/src/data.js";
 import { useTranslation } from "react-i18next";
 
 export default function Statistics({ innerRef, isMobile }) {
