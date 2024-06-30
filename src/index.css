@@ -25,6 +25,8 @@
   justify-self: start;
 }
 
+
+
 .menu-lg{
     /* margin-right: calc(100px + 10 * (100vw - 320px) / 1120); */
     margin-left: calc(60px +  40 * (100vw - 320px) / 1120);
@@ -42,7 +44,7 @@
     margin-bottom: calc(10px + 21 * (100vw - 320px) / 1120);
 }
 #info h3{
-    font-size: calc(27px + 19 * (100vw - 320px) / 1120);
+    font-size: calc(22px + 24 * (100vw - 320px) / 1120);
     margin-bottom: calc(63px + 19 * (100vw - 320px) / 1120);
 }
 #info  button{

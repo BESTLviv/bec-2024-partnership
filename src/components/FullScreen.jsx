@@ -147,7 +147,7 @@ export default function FullScreen({ propositionsRef, whatBecRef, statisticsRef,
             <div></div>
             <div id="info" className="relative top-1/2 transform translate-y-[-50%] flex-grow flex flex-col justify-center mx-[50px] mb-[40px] text-white">
                 <h2 className="text-white text-header font-daysOne mb-[18px]">BEST Engineering Competition</h2>
-                <h3 className="text-white font-karla leading-[33px] text-[28px]">{t('full-screen.date')}</h3>
+                <h3 className="text-white date-header text-nowrap font-karla leading-[33px] text-[28px]">{t('full-screen.date')}</h3>
                 <button onClick={handleScrollToPropositions} style={{ fontSize: 'calc(16px + 4 * (100vw - 320px) / 1120)' }} className="full-screen-button transition-transform transform-gpu duration-[400ms] hover:scale-[1.1] block  bg-customOrange text-black p-[10px]">{t('full-screen.become')}</button>
             </div>
         </div>
