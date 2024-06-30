@@ -1,10 +1,21 @@
+import katyaImg from "/src/assets/katya.png"
+import rulaImg from "/src/assets/rula.png"
+import anyaImg from "/src/assets/anya.png"
+
+const images = {
+    "katya": katyaImg,
+    "rula": rulaImg,
+    "anya": katyanyaImgaImg,
+
+}
+
 import phone from "/src/assets/phone.svg"
 import emailImg from "/src/assets/email.svg"
 export default function Contact({ image, name, position, number, email }) {
     return (
         <li className=" border-2 border-customOrange contact2 contact1 contact1  mb-5 lg:mb-0">
             <div className=" flex flex-col h-full items-center px-6 lg:px-[30px]">
-                <img className="contact-image object-cover w-full max-h-[283px]" src={image} alt="" />
+                <img className="contact-image object-cover w-full max-h-[283px]" src={images[image]} alt="" />
                 <div className=" flex-1">
                     <p className=" text-nowrap contact-name ">{name}</p>
                     <p className=" text-center  contact-role ">{position}</p>
