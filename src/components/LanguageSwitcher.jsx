@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
-  const [activeLanguage, setActiveLanguage] = useState('ua');
+  const [activeLanguage, setActiveLanguage] = useState(localStorage.getItem('language') || 'ua');
 
   useEffect(() => {
     i18n.changeLanguage(activeLanguage);
