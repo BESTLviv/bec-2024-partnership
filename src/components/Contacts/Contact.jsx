@@ -5,7 +5,7 @@ import anyaImg from "/src/assets/anya.png"
 const images = {
     "katya": katyaImg,
     "rula": rulaImg,
-    "anya": katyanyaImgaImg,
+    "anya": anyaImg,
 
 }
 
