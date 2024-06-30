@@ -1,3 +1,11 @@
+import subject1 from "/src/assets/subject1.jpg"
+import subject2 from "/src/assets/subject2.jpg"
+
+
+const images = {
+    "subject1": subject1,
+    "subject2": subject2,
+}
 
 export default function Subject({ subject, isLast }) {
     return (
@@ -10,7 +18,7 @@ export default function Subject({ subject, isLast }) {
                 ))}
 
             </div>
-            <img className="self-center object-cover lg:self-start vs__image" src={subject.find(item => item.image)?.image} alt="" />
+            <img className="self-center object-cover lg:self-start vs__image" src={images[subject.find(item => item.image)?.image]} alt="" />
         </ol>
         // ${isLast ? '' : 'mb-[60px]'} 
     );

@@ -26,7 +26,7 @@
                 "text": " — розробити план подальших дій, що покриватиме всі вимоги та відповідатиме визначеному бюджету."
             },
             {
-                "image": "/src/assets/subject1.jpg"
+                "image": "subject1"
             }       
         ],
         [
@@ -39,7 +39,7 @@
                 "text": " — створити новий прототип пристрою чи покращити старий, використовуючи надані матеріали."
             },
             {
-                   "image": "/src/assets/subject2.jpg"
+                   "image": "subject2"
             }
             
            
@@ -417,23 +417,23 @@
         "title": "ДЛЯ КОМПАНІЇ BEC — МОЖЛИВІСТЬ",
         "opportunities": [
         {
-            "image": "/src/assets/opportunity1.svg",
+            "image": "opportunity1",
             "text": "Підвищити впізнаваність Вашої компанії серед студентської спільноти"
         },
         {
-            "image": "/src/assets/opportunity2.svg",
+            "image": "opportunity2",
             "text": "Заохотити до співпраці активну молодь України, що зацікавлена у сфері інженерії"
         },
         {
-            "image": "/src/assets/opportunity3.svg",
+            "image": "opportunity3",
             "text": "Знайти нові ідеї для вирішення Вашої проблеми"
         },
         {
-            "image": "/src/assets/opportunity4.svg",
+            "image": "opportunity4",
             "text": "Познайомитися зі здібними студентами та відібрати серед них перспективних працівників"
         },
         {
-            "image": "/src/assets/opportunity5.svg",
+            "image": "opportunity5",
             "text": "Підтримати розвиток молодих інженерів"
         }
     ]

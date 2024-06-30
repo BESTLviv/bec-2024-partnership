@@ -27,7 +27,7 @@
                 "subText":  "The goal"
             },
             {
-                "image": "/src/assets/subject1.jpg"
+                "image": "subject1"
             }
            
         ],
@@ -42,7 +42,7 @@
             },
             
            {
-                "image": "/src/assets/subject2.jpg"
+                "image": "subject2"
            }
             
         ]
@@ -426,23 +426,23 @@
         "title": "FOR COMPANY THE BEC — AN OPPORTUNITY TO",
         "opportunities": [
             {
-                "image": "/src/assets/opportunity1.svg",
+                "image": "opportunity1",
                 "text": "Increase the recognition of your company among the student community"
             },
             {
-                "image": "/src/assets/opportunity2.svg",
+                "image": "opportunity2",
                 "text": "Encourage active young people of Ukraine interested in engineering to cooperate"
             },
             {
-                "image": "/src/assets/opportunity3.svg",
+                "image": "opportunity3",
                 "text": "Find new ideas to solve your problem"
             },
             {
-                "image": "/src/assets/opportunity4.svg",
+                "image": "opportunity4",
                 "text": "Meet talented students and select promising employees among them"
             },
             {
-                "image": "/src/assets/opportunity5.svg",
+                "image": "opportunity5",
                 "text": "Support the development of young engineers"
             }
         ]
