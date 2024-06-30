@@ -68,6 +68,7 @@ module.exports = {
       workSans: ['WorkSans'], 
       workSansB: ['WorkSansB'], 
       karla: ['Karla'],
+      franclin: ['franclin'],
     }
   },
   plugins: [],

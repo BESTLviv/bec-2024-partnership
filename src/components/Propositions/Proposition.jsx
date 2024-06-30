@@ -21,7 +21,7 @@ export function Proposition({ proposition, addToBasket, isActive, handleRemovePr
     }
 
     let classBlock = "transition-transform transform-gpu duration-[400ms] hover:scale-[1.05]  cursor-pointer  relative flex  flex-col cursor-pointer text-white mb-10 lg:mb-0 w-full lg:w-full lg:h-[515px] h-[456px]  px-[25px] lg:px-[63px] bg-proposition-gradient p-5  text-[12px] font-medium";
-    let classButton = "font-workSans self-center box-border text-[24px] absolute left-1/2 bg-proposition-button transform translate-y-1/2 -translate-x-1/2 bottom-0 w-[112px] h-[42px] border-solid border-2 border-white flex justify-center items-center";
+    let classButton = "  self-center box-border text-[24px] absolute left-1/2 bg-proposition-button transform translate-y-1/2 -translate-x-1/2 bottom-0 w-[112px] h-[42px] border-solid border-2 border-white flex justify-center items-center";
 
     if (isActive) {
         classBlock += " clicked";
@@ -96,7 +96,7 @@ export function SubProposition({ proposition, isMobile, addToBasket, handleRemov
         setIsChecked(!isChecked);
     };
     let classBlock = "transition-transform transform-gpu duration-[400ms] hover:scale-[1.02] cursor-pointer relative flex items-center justify-center text-white w-full lg:w-full p-[15px] bg-proposition-gradient lg:mb-[22px] mb-[10px] lg:px-[32px] lg:py-[19px] text-[14px] ";
-    let classButton = "flex-grow-0 flex-shrink-0 add-proposition__button font-workSans box-border text-[14px] lg:text-[20px] relative bg-proposition-button border-[1px] flex justify-center items-center self-center mr-3 lg:mr-5";
+    let classButton = "flex-grow-0 flex-shrink-0 add-proposition__button box-border text-[14px] lg:text-[20px] relative bg-proposition-button border-[1px] flex justify-center items-center self-center mr-3 lg:mr-5";
     let classCheckBox = "mr-[12px] lg:mr-[20px] self-center custom-checkbox translate-y-[5px]  h-[10px] w-[10px] lg:h-[24px] lg:w-[24px] focus:outline-none"
     let classText = "add-proposition__name break-words pr-[35px] max-w-[300px]   lg:w-aut"
     if (isActive) {

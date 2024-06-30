@@ -50,6 +50,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'franclin';
+
+  src: url('/src/fonts/FranklinGothic.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
 /* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com */
 
 /*
@@ -1883,6 +1893,10 @@ video {
   font-family: DaysOne;
 }
 
+.font-franclin {
+  font-family: franclin;
+}
+
 .font-karla {
   font-family: Karla;
 }
@@ -1947,10 +1961,6 @@ video {
 
 .leading-\[33px\] {
   line-height: 33px;
-}
-
-.leading-\[60px\] {
-  line-height: 60px;
 }
 
 .leading-\[40px\] {
