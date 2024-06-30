@@ -385,7 +385,9 @@
     }
   ],
 
-  "contacts": [
+  "contacts": {
+    "title": "Контакти",
+    "contacts": [
     {
         "image": "/src/assets/katya.png",
         "name": "Ярощук Катерина",
@@ -407,7 +409,9 @@
         "number": "+380960625230",
         "email": "anna.medzyn@best-eu.org"
     }
-],
+]
+  },
+  
 
 "opportunities": {
         "title": "ДЛЯ КОМПАНІЇ BEC — МОЖЛИВІСТЬ",

@@ -69,11 +69,11 @@ export default function Basket({ isMobile, selectedPropositions, handleRemovePro
 
     const basket = <div className="text-white  self-center lg:self-start mx-[16px] flex flex-col border-2 border-white p-[30px] mb-[30px] w-auto lg:w-[380px] h-auto lg:max-h-[330px]">
         <div>
-            <input id='email' onChange={handleChangeEmail} className="basket__submit pl-[22px] mb-3  h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder={t("basket.modalText1")} />
+            <input id='email' onChange={handleChangeEmail} className="basket__submit rounded-none pl-[22px] mb-3  h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder={t("basket.modalText1")} />
             <div className="text-red-500 mb-2">{emailError}</div>
         </div>
         <div>
-            <input id='company' onChange={handleChangeName} className="basket__submit pl-[22px] mb-3  h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder={t("basket.modalText2")} />
+            <input id='company' onChange={handleChangeName} className="basket__submit rounded-none pl-[22px] mb-3  h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder={t("basket.modalText2")} />
             <div className="text-red-500">{companyError}</div>
         </div>
         <button onClick={sendEmail} className="basket__submit mt-[30px] self-center text-white border-2 border-white flex justify-center items-center h-[40px] w-[161px] lg:h-[40px] lg:w-[195px] transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]">{t("basket.modalSubmit")}</button>

@@ -1588,6 +1588,10 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-none {
+  border-radius: 0px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1879,12 +1883,12 @@ video {
   font-family: DaysOne;
 }
 
-.font-workSans {
-  font-family: WorkSans;
-}
-
 .font-karla {
   font-family: Karla;
+}
+
+.font-workSans {
+  font-family: WorkSans;
 }
 
 .text-\[12px\] {
@@ -1947,6 +1951,10 @@ video {
 
 .leading-\[60px\] {
   line-height: 60px;
+}
+
+.leading-\[40px\] {
+  line-height: 40px;
 }
 
 .tracking-normal {
@@ -3233,6 +3241,10 @@ input[type="checkbox"] {
 
   .lg\:text-\[56px\] {
     font-size: 56px;
+  }
+
+  .lg\:leading-\[60px\] {
+    line-height: 60px;
   }
 
   .lg\:opacity-0 {

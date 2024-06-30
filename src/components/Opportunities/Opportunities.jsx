@@ -26,7 +26,7 @@ export default function Opportunities({ isMobile }) {
     return (
         <div id="opportunities" className=" relative px-[25px] lg:px-[140px]">
             {elipse}
-            <Title className="opportunities__title  text-center px-[25px] leading-[60px]">{t("opportunities.title")}</Title>
+            <Title className="opportunities__title  text-center px-[25px] leading-[40px] lg:leading-[60px]">{t("opportunities.title")}</Title>
             {content}
         </div>
     );
