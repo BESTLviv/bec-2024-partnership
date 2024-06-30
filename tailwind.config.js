@@ -67,6 +67,7 @@ module.exports = {
       jura: ['Jura'], 
       workSans: ['WorkSans'], 
       workSansB: ['WorkSansB'], 
+      karla: ['Karla'],
     }
   },
   plugins: [],

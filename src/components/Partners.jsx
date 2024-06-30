@@ -2,8 +2,11 @@ import React, { useMemo } from 'react';
 import Title from './Title';
 import { PARTNERS } from '/src/data.js';
 import classNames from 'classnames';
+import { useTranslation } from 'react-i18next';
 
 export default function Partners({ isMobile }) {
+    const { t } = useTranslation();
+
     const chunkArray = (array, sizes) => {
         let index = 0;
         return sizes.map(size => {
@@ -20,7 +23,7 @@ export default function Partners({ isMobile }) {
 
     return (
         <div className="partners text-white px-[15px]">
-            <Title className="partners__title text-center px-[40px]">НАС ПІДТРИМУЮТЬ</Title>
+            <Title className="partners__title text-center px-[40px]">{t("partners")}</Title>
             {chunkedPartners.map((row, rowIndex) => (
                 <div key={rowIndex} className="flex justify-center partners__row">
                     {row.map((partner, index) => (

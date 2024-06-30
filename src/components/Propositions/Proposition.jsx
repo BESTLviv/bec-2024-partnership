@@ -2,17 +2,21 @@ import React, { useState } from 'react';
 import Points from "../Points";
 import { useEffect } from 'react';
 import { INFO_PROPOSITIONS, INFO_ADDITIONAL_PROPOSITIONS } from '../../data';
+import { useTranslation } from 'react-i18next';
 const CORE_PROPOSITION = "Solid Base";
 
-export function Proposition({ title, points, subInfo, price, addToBasket, isActive, handleRemoveProposition }) {
+export function Proposition({ proposition, addToBasket, isActive, handleRemoveProposition }) {
+    const { t } = useTranslation()
+    const propositionsInfo = t('packetsInfo.propositions', { returnObjects: true });
+
     const [isModalVisible, setIsModalVisible] = useState(false);
 
     function handleClickOnBlock() {
-        if (isActive && CORE_PROPOSITION != title) {
-            handleRemoveProposition(title)
+        if (isActive && CORE_PROPOSITION != proposition.title) {
+            handleRemoveProposition(proposition.title)
         }
         else {
-            addToBasket(title, price, false);
+            addToBasket(proposition.title, proposition.price, false);
         }
     }
 
@@ -23,15 +27,16 @@ export function Proposition({ title, points, subInfo, price, addToBasket, isActi
         classBlock += " clicked";
         classButton += " clicked";
     }
-    const proposition = INFO_PROPOSITIONS.find(item => item.title === title)
+    const propositionInfo = propositionsInfo.find(item => item.title === proposition.title)
+    console.log(propositionsInfo)
     return (
         <>
             <Modal isVisible={isModalVisible} onClose={() => setIsModalVisible(false)}>
                 {
                     <div className=' info-container text-white'>
-                        <p className=' info-propo mb-2 font-daysOne'>{proposition.title}</p>
+                        <p className=' info-propo mb-2 font-daysOne'>{propositionInfo.title}</p>
                         {
-                            proposition.points.map((item, index) =>
+                            propositionInfo.points.map((item, index) =>
                                 <div key={index}>
                                     <p className=' info-title mb-2 font-daysOne'>{item.text}</p>
                                     <p className=' info-description mb-4'>{item.description}</p>
@@ -52,10 +57,10 @@ export function Proposition({ title, points, subInfo, price, addToBasket, isActi
                 >
                     i
                 </button>
-                <p className=" proposition__title text-[24px] font-daysOne uppercase mb-[12px]">{title}</p>
-                <Points data={points}></Points>
-                <div className="absolute transform -translate-y-[125%] bottom-0 inline-block w-auto border-solid border-[1px] border-customGray text-customGray text-[12px] p-[10px]">{subInfo}</div>
-                <button className={classButton}>{price}$</button>
+                <p className=" proposition__title text-[24px] font-daysOne uppercase mb-[12px]">{proposition.title}</p>
+                <Points data={proposition.points} className="before:top-[6px] step1:before:top-[8px] step3:before:top-[10px] lg:before:top-[11px] 3xl:before:top-[14px] before:w-[7px] before:h-[7px] 1090xl:before:w-[8px] 1090xl:before:h-[8px]"></Points>
+                <div className="absolute transform -translate-y-[125%] bottom-0 inline-block w-auto border-solid border-[1px] border-customGray text-customGray text-[12px] p-[10px]">{proposition.subInfo}</div>
+                <button className={classButton}>{proposition.price}$</button>
 
 
             </div>
@@ -64,24 +69,29 @@ export function Proposition({ title, points, subInfo, price, addToBasket, isActi
     );
 }
 
-export function SubProposition({ isMobile, text, price, addToBasket, handleRemoveProposition, isActive, special }) {
+export function SubProposition({ proposition, isMobile, addToBasket, handleRemoveProposition, isActive }) {
+    const { t } = useTranslation()
+    const additionalPropositionsInfo = t('additionalPropositionsInfo', { returnObjects: true });
+
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
 
+
+
     const handleCheckboxChange = () => {
         if (isChecked) {
-            handleRemoveProposition(text);
+            handleRemoveProposition(proposition.text);
         } else {
-            addToBasket(text, price, true);
+            addToBasket(proposition.text, proposition.price, true);
         }
         setIsChecked(!isChecked);
     };
 
     const handleClickOnBlock = () => {
         if (isChecked) {
-            handleRemoveProposition(text);
+            handleRemoveProposition(proposition.text);
         } else {
-            addToBasket(text, price, true);
+            addToBasket(proposition.text, proposition.price, true);
         }
         setIsChecked(!isChecked);
     };
@@ -94,17 +104,17 @@ export function SubProposition({ isMobile, text, price, addToBasket, handleRemov
         classButton += " clicked";
     }
 
-    if (special) {
+    if (proposition.special) {
         classCheckBox = "mr-[12px] lg:mr-[20px] self-center custom-checkbox transform translate-y-[10px]  h-[10px] w-[10px] lg:h-[24px] lg:w-[24px] focus:outline-none"
     }
 
     let extra =
-        <div className="sub-propositions__extra border w-full border-extra flex justify-center items-center">{special}</div>
+        <div className="sub-propositions__extra border w-full border-extra flex justify-center items-center">{proposition.special}</div>
 
     let buttons = <div className='flex flex-col  lg:flex-row'>
         <div className='flex mb-2  justify-center items-center'>
             <button className={classButton}>
-                {price}$
+                {proposition.price}$
             </button>
             <button
                 className=" lg:mr-2 flex-grow-0 flex-shrink-0 transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] w-5 h-5 lg:w-[26px] lg:h-[26px] lg:text-[16px] border-solid border-[3px] border-white rounded-full text-white flex justify-center items-center"
@@ -117,21 +127,21 @@ export function SubProposition({ isMobile, text, price, addToBasket, handleRemov
             </button>
         </div>
 
-        {special && extra}
+        {proposition.special && extra}
     </div>
 
 
 
 
-    if (!isMobile || special == null) {
+    if (!isMobile || proposition.special == null) {
         classCheckBox = "mr-[12px] lg:mr-[20px] self-center custom-checkbox transform translate-y-[4px]  h-[10px] w-[10px] lg:h-[24px] lg:w-[24px] focus:outline-none"
         classText = "add-proposition__name break-words pr-[35px] lg:w-auto"
         buttons = <div className='flex flex-col lg:flex-row'>
 
-            {special && extra}
+            {proposition.special && extra}
             <div className='flex justify-center items-center '>
                 <button className={classButton}>
-                    {price}$
+                    {proposition.price}$
                 </button>
                 <button
                     className=" lg:mr-2 flex-grow-0 flex-shrink-0 transition-transform transform-gpu duration-[400ms] hover:scale-[1.2] w-5 h-5 lg:w-[26px] lg:h-[26px] lg:text-[16px] border-solid border-[3px] border-white rounded-full text-white flex justify-center items-center"
@@ -151,7 +161,7 @@ export function SubProposition({ isMobile, text, price, addToBasket, handleRemov
     return (
         <>
             <Modal isVisible={isModalVisible} onClose={() => setIsModalVisible(false)} className="  ">
-                {INFO_ADDITIONAL_PROPOSITIONS.map((info, index) =>
+                {additionalPropositionsInfo.map((info, index) =>
                     <div className=' info-container text-white' key={index}>
                         <p className='  info-title mb-2 font-daysOne'>{info.title}</p>
                         <p className=' info-description mb-4'>{info.description}</p>
@@ -167,7 +177,7 @@ export function SubProposition({ isMobile, text, price, addToBasket, handleRemov
                     />
                 </div>
                 <div className="flex-grow">
-                    <p className={classText}>{text}</p>
+                    <p className={classText}>{proposition.text}</p>
                 </div>
 
                 {buttons}

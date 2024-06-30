@@ -17,13 +17,21 @@
     padding-top: calc(17px + 3 * (100vw - 320px) / 1120);
     padding-bottom: calc(17px + 3 * (100vw - 320px) / 1120);
 }
-#header div button{
-    margin-right: calc(70px + 33 * (100vw - 320px) / 1120);
-}
-#header div div{
-    margin-right: calc(100px + 33 * (100vw - 320px) / 1120);
+.menu-element{
+    margin-right: calc(70px + 23 * (100vw - 320px) / 1120);
 }
 
+.logo{
+  justify-self: start;
+}
+
+.menu-lg{
+    /* margin-right: calc(100px + 10 * (100vw - 320px) / 1120); */
+    margin-left: calc(60px +  40 * (100vw - 320px) / 1120);
+}
+.full-screen-button{
+  margin-right: calc(70px + 33 * (100vw - 320px) / 1120);
+}
 #full-screen{
     
 }
@@ -300,6 +308,14 @@
         margin-bottom: calc(55px + 10 * (100vw - 320px) / 1120);
     }
   }
+
+  .switcher{ 
+    /* padding-left: calc(25px + 25 * (100vw - 320px) / 1120); */
+    font-size: calc(14px  + 6 *  (100vw - 320px) / 1120);;
+    width: calc(100px + 22 * (100vw - 320px) / 1120);
+    height: calc(35px + 11 * (100vw - 320px) / 1120);
+    
+  } 
 
   
   

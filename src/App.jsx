@@ -18,9 +18,11 @@ import Footer from "./components/Footer";
 import { Proposition } from './components/Propositions/Proposition';
 import { SLIDES } from './data';
 
+import { useTranslation } from 'react-i18next';
 
 export default function App() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+    const { i18n } = useTranslation();
 
     useEffect(() => {
         const handleResize = () => {
@@ -34,6 +36,12 @@ export default function App() {
         };
     }, []);
 
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) {
+            i18n.changeLanguage(savedLanguage);
+        }
+    }, [i18n]);
 
 
     const [selectedPropositions, setSelectedPropositions] = useState([{ title: "Solid Base", price: 350, isSub: false }]);
@@ -74,11 +82,7 @@ export default function App() {
             <Opportunities isMobile={isMobile} />
             <Statistics isMobile={isMobile} innerRef={statisticsRef} />
             <Portrait isMobile={isMobile} />
-
             <Propositions isMobile={isMobile} innerRef={propositionsRef} selectedPropositions={selectedPropositions} addToBasket={addToBasket} handleRemoveProposition={handleRemoveProposition} />
-
-
-
             <Basket isMobile={isMobile} selectedPropositions={selectedPropositions} handleRemoveProposition={handleRemoveProposition} />
             <Partners isMobile={isMobile} />
             <Aboutbest />

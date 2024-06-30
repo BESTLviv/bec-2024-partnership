@@ -1,7 +1,11 @@
 import Title from "../Title";
 import Subject from "./Subject";
 import { SUBJECTS } from "/src/data.js";
-export default function TdVsCs({ isMobile }) {
+import { useTranslation } from "react-i18next";
+
+export default function TdVsCs() {
+    const { t } = useTranslation();
+    const subjects = t('subjects', { returnObjects: true });
     return (
         <div className="vs bg-black  relative text-white px-[50px] lg:flex lg:flex-col lg:items-center">
             {/* <div className=" absolute z-30 bg-lines w-[2770px] h-[2400px] -left-[1300px] transform rotate-[-27.55deg]"> */}
@@ -10,7 +14,7 @@ export default function TdVsCs({ isMobile }) {
 
             <Title className=" relative z-50 vs__title text-center">CASE STUDY VS TEAM DESIGN</Title>
             <div className=" bg-black p-5 lg:flex relative z-30 lg:gap-[196px]   ">
-                {SUBJECTS.map((item, index) => <Subject key={index} subject={item} isLast={index === SUBJECTS.length - 1}></Subject>)}
+                {subjects.map((item, index) => <Subject t={t} key={index} subject={item} isLast={index === subjects.length - 1}></Subject>)}
             </div>
 
         </div>

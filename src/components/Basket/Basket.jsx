@@ -3,8 +3,10 @@ import { PROPOSITIONS, ADDITIONAL_PROPOSITIONS } from "/src/data.js";
 import Purchase from "./Purchase";
 import emailjs from 'emailjs-com';
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Basket({ isMobile, selectedPropositions, handleRemoveProposition }) {
+    const { t } = useTranslation();
 
     const [companyName, setCompanyName] = useState("");
     const [emailName, setEmailName] = useState("");
@@ -35,16 +37,16 @@ export default function Basket({ isMobile, selectedPropositions, handleRemovePro
     const sendEmail = () => {
         if (!emailName || !companyName) {
             if (!emailName) {
-                setEmailError("Будь ласка, введіть електронну пошту");
+                setEmailError(t("basket.modalError1"));
             }
             if (!companyName) {
-                setCompanyError("Будь ласка, введіть назву компанії");
+                setCompanyError(t("basket.modalError2"));
             }
             return;
         }
 
         if (!validateEmail(emailName)) {
-            setEmailError("Будь ласка, введіть коректну електронну пошту");
+            setEmailError(t("basket.modalError3"));
             return;
         }
 
@@ -68,14 +70,14 @@ export default function Basket({ isMobile, selectedPropositions, handleRemovePro
 
     const basket = <div className="text-white  self-center lg:self-start mx-[16px] flex flex-col border-2 border-white p-[30px] mb-[30px] w-auto lg:w-[380px] h-auto lg:max-h-[330px]">
         <div>
-            <input id='email' onChange={handleChangeEmail} className="basket__submit pl-[22px] mb-3  h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder="Введіть пошту" />
+            <input id='email' onChange={handleChangeEmail} className="basket__submit pl-[22px] mb-3  h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder={t("basket.modalText1")} />
             <div className="text-red-500 mb-2">{emailError}</div>
         </div>
         <div>
-            <input id='company' onChange={handleChangeName} className="basket__submit pl-[22px] mb-3  h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder="Введіть назву компанії" />
+            <input id='company' onChange={handleChangeName} className="basket__submit pl-[22px] mb-3  h-[48px] lg:h-[59px] w-full placeholder:text-borderButton border-borderButton border-[1px] bg-blackBg" type="text" name="" placeholder={t("basket.modalText2")} />
             <div className="text-red-500">{companyError}</div>
         </div>
-        <button onClick={sendEmail} className="basket__submit mt-[30px] self-center text-white border-2 border-white flex justify-center items-center h-[40px] w-[161px] lg:h-[40px] lg:w-[195px] transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]">Оформити</button>
+        <button onClick={sendEmail} className="basket__submit mt-[30px] self-center text-white border-2 border-white flex justify-center items-center h-[40px] w-[161px] lg:h-[40px] lg:w-[195px] transition-transform transform-gpu duration-[400ms] hover:scale-[1.1]">{t("basket.modalSubmit")}</button>
     </div>
 
     // let lines = <div className="absolute bg-lines2  bg-no-repeat w-[2300px] h-[1500px] z-10s  left-[5%] transform  top-[-135%]"></div>
@@ -92,11 +94,11 @@ export default function Basket({ isMobile, selectedPropositions, handleRemovePro
             <div className="absolute bg-ellipse-black w-[1700.39px] rounded-full h-[674.22px] left-[50%] top-[-100%] z-10 filter blur-[70px] transform rotate-[-90.56deg]"></div>
 
             <div className="bg-ellipse w-[564px] h-[652px] left-[90%] top-[60%] absolute scale-[1.7] transform rotate-[-63.49deg] z-10 filter blur-[90px]"></div>
-            <Title className=" relative z-30  basket__title text-center lg:text-center mx-[100px] mb-[25px] lg:mb-[54px]">КОШИК</Title>
+            <Title className=" relative z-30  basket__title text-center lg:text-center mx-[100px] mb-[25px] lg:mb-[54px]">{t("basket.title")}</Title>
             <div className="flex relative z-30 flex-col lg:flex-row lg:justify-center lg:gap-[160px] ">
                 <div className="text-white mx-[30px] flex flex-col  lg:w-[570px]">
                     <div>
-                        <div className=" text-[24px] lg:text-[36px] font-daysOne mb-[20px] ">Пакети</div>
+                        <div className=" text-[24px] lg:text-[36px] font-daysOne mb-[20px] ">{t("basket.propositions")}</div>
                         <ol>
                             {selectedPropositions.map((item, index) => (
                                 !item.isSub && (
@@ -106,7 +108,7 @@ export default function Basket({ isMobile, selectedPropositions, handleRemovePro
                         </ol>
                     </div>
                     <div>
-                        <div className="basket__section font-daysOne mb-[30px] ">Опції</div>
+                        <div className="basket__section font-daysOne mb-[30px] ">{t("basket.options")}</div>
                         <ol>
                             {selectedPropositions.map((item, index) => (
                                 item.isSub && (
@@ -121,12 +123,12 @@ export default function Basket({ isMobile, selectedPropositions, handleRemovePro
                     </div>
                     {isMobile && basket}
                     <div className=" text-white  ">
-                        <div className=" basket__section mb-[12px] font-daysOne ">Акції</div>
+                        <div className=" basket__section mb-[12px] font-daysOne ">{t("basket.discont")}</div>
                         <ol className="basket__discount w-[90%] lg:w-auto">
-                            <li className="mb-[5px]"><span className=" text-orange-400">-10%</span> при купівлі 3–х пакетів.</li>
-                            <li className="mb-[5px]"><span className=" text-orange-400">-5%</span> для компаній–партнерів EBEC’2021 та/або BEC’2023 (застосовується після узгодження з організаторами).</li>
-                            <li className="mb-[5px]"><span className=" text-orange-400">-10%</span>  для всіх партнерів, що працюють у сфері military та military–tech (застосовується після узгодження з організаторами)</li>
-                            <li className="mb-[5px]">*Знижки не поєднуються.</li>
+                            <li className="mb-[5px]"><span className=" text-orange-400">-10%</span>{t("basket.discontText1")}</li>
+                            <li className="mb-[5px]"><span className=" text-orange-400">-5%</span>{t("basket.discontText2")}</li>
+                            <li className="mb-[5px]"><span className=" text-orange-400">-10%</span>{t("basket.discontText3")}</li>
+                            <li className="mb-[5px]">{t("basket.discontText4")}</li>
                         </ol>
 
                     </div>
