@@ -85,6 +85,7 @@
     },
     "basket": {
         "title": "Cart",
+        "successMessage": "The purchase letter has been successfully sent to the organizers, expect a reply!",
         "propositions": "Packages",
         "options": "Options",
         "modalText1": "Enter your email address",
