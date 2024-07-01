@@ -33,6 +33,7 @@
 }
 .full-screen-button{
   margin-right: calc(70px + 33 * (100vw - 320px) / 1120);
+ 
 }
 #full-screen{
     
@@ -48,10 +49,13 @@
     margin-bottom: calc(63px + 19 * (100vw - 320px) / 1120);
 }
 #info  button{
-    width: calc(285px + 70 * (100vw - 320px) / 1120);
+    width: calc(235px + 120 * (100vw - 320px) / 1120);
     height: calc(41px + 36 * (100vw - 320px) / 1120);
 }
-
+.statistic__diagrams{
+ 
+  width: calc(250px + 216 * (100vw - 320px) / 1120);
+}
 .background-fill {
     background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 90.86%),
                       linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));

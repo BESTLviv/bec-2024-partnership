@@ -12,6 +12,7 @@ module.exports = {
         'step2': '750px',
         'step3': '900px',
         '1090xl': '1090px',
+        '1130px': '1130px',
         '3xl': '1300px',
 
       },

@@ -26,9 +26,9 @@ export default function Statistics({ innerRef, isMobile }) {
                         </ol>
                     </div>
                 </div>
-                <div className="mt-[50px] ml-[23px] relative z-20 h-[311.5px] lg:w-[466px] lg:h-[461px]   border-solid border-l-2 border-white flex flex-col font-bold">
-                    <div className="pb-[31px]">
-                        <p className="ml-5 text-nowrap mb-[7px] statistic__sub-title">{t("statistics.text1")}<span className="statistic__span-sub-title">80</span> </p>
+                <div className="mt-[50px] ml-[23px] relative z-20 h-[311.5px] statistic__diagrams lg:h-[461px]   border-solid border-l-2 border-white flex flex-col font-bold">
+                    <div className="pb-[31px] ">
+                        <p className="ml-5 leading-7   step1:text-nowrap lg:text-wrap 1130px:text-nowrap mb-[7px] statistic__sub-title">{t("statistics.text1")}<span className="statistic__span-sub-title">80</span> </p>
                         <div className="h-[83px] lg:h-[113px] w-full bg-custom-gradient"></div>
                     </div>
                     <div className="mb-[37px]">

@@ -722,10 +722,6 @@ video {
   left: 30%;
 }
 
-.left-\[5\%\] {
-  left: 5%;
-}
-
 .left-\[50\%\] {
   left: 50%;
 }
@@ -764,10 +760,6 @@ video {
 
 .top-\[-13\%\] {
   top: -13%;
-}
-
-.top-\[-135\%\] {
-  top: -135%;
 }
 
 .top-\[-30\%\] {
@@ -1057,16 +1049,16 @@ video {
   margin-right: 66px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-\[30px\] {
   margin-top: 30px;
 }
 
 .mt-\[50px\] {
   margin-top: 50px;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
 }
 
 .box-border {
@@ -1791,10 +1783,6 @@ video {
   padding: 15px;
 }
 
-.p-\[30px\] {
-  padding: 30px;
-}
-
 .p-\[40px\] {
   padding: 40px;
 }
@@ -1877,12 +1865,12 @@ video {
   padding-bottom: 9px;
 }
 
-.pl-\[15px\] {
-  padding-left: 15px;
+.pl-\[12px\] {
+  padding-left: 12px;
 }
 
-.pl-\[22px\] {
-  padding-left: 22px;
+.pl-\[15px\] {
+  padding-left: 15px;
 }
 
 .pr-\[35px\] {
@@ -1891,10 +1879,6 @@ video {
 
 .pt-\[9px\] {
   padding-top: 9px;
-}
-
-.pl-\[12px\] {
-  padding-left: 12px;
 }
 
 .text-center {
@@ -1959,6 +1943,10 @@ video {
   line-height: 2.5rem;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
 .leading-\[150\%\] {
   line-height: 150%;
 }
@@ -1990,6 +1978,11 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
 .text-orange-400 {
   --tw-text-opacity: 1;
   color: rgb(251 146 60 / var(--tw-text-opacity));
@@ -2003,11 +1996,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-green-500 {
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .opacity-90 {
@@ -2115,8 +2103,12 @@ video {
 }
 
 #info  button{
-  width: calc(285px + 70 * (100vw - 320px) / 1120);
+  width: calc(235px + 120 * (100vw - 320px) / 1120);
   height: calc(41px + 36 * (100vw - 320px) / 1120);
+}
+
+.statistic__diagrams{
+  width: calc(250px + 216 * (100vw - 320px) / 1120);
 }
 
 .background-fill {
@@ -2823,6 +2815,10 @@ input[type="checkbox"] {
     top: 0%;
   }
 
+  .step1\:text-nowrap {
+    text-wrap: nowrap;
+  }
+
   .step1\:bg-\[length\:1270px_1250px\] {
     background-size: 1270px 1250px;
   }
@@ -3087,10 +3083,6 @@ input[type="checkbox"] {
     width: 380px;
   }
 
-  .lg\:w-\[466px\] {
-    width: 466px;
-  }
-
   .lg\:w-\[549px\] {
     width: 549px;
   }
@@ -3187,6 +3179,10 @@ input[type="checkbox"] {
 
   .lg\:justify-self-end {
     justify-self: end;
+  }
+
+  .lg\:text-wrap {
+    text-wrap: wrap;
   }
 
   .lg\:px-0 {
@@ -3314,6 +3310,12 @@ input[type="checkbox"] {
   .\31 090xl\:before\:w-\[8px\]::before {
     content: var(--tw-content);
     width: 8px;
+  }
+}
+
+@media (min-width: 1130px) {
+  .\31 130px\:text-nowrap {
+    text-wrap: nowrap;
   }
 }
 
