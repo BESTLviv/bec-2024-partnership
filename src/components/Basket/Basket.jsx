@@ -50,7 +50,7 @@ export default function Basket({ isMobile, selectedPropositions, handleRemovePro
             return;
         }
 
-        emailjs.send('service_6vhjdu7', templateId, {
+        emailjs.send('service_zcofpjp', templateId, {
             company: companyName,
             email: emailName,
             propositions: selectedPropositions.map(proposition => proposition.title + ": " + proposition.price),
