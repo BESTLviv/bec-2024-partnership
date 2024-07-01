@@ -1795,6 +1795,10 @@ video {
   padding: 30px;
 }
 
+.p-\[40px\] {
+  padding: 40px;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -1887,6 +1891,10 @@ video {
 
 .pt-\[9px\] {
   padding-top: 9px;
+}
+
+.pl-\[12px\] {
+  padding-left: 12px;
 }
 
 .text-center {
@@ -3228,6 +3236,10 @@ input[type="checkbox"] {
 
   .lg\:pl-4 {
     padding-left: 1rem;
+  }
+
+  .lg\:pl-\[22px\] {
+    padding-left: 22px;
   }
 
   .lg\:text-center {
