@@ -3326,6 +3326,16 @@ input[type="checkbox"] {
   }
 }
 
+@media (min-width: 2100px) {
+  .min-\[2100px\]\:h-\[555px\] {
+    height: 555px;
+  }
+
+  .min-\[2100px\]\:h-\[585px\] {
+    height: 585px;
+  }
+}
+
 
 
 

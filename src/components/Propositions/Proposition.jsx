@@ -20,7 +20,7 @@ export function Proposition({ proposition, addToBasket, isActive, handleRemovePr
         }
     }
 
-    let classBlock = "transition-transform transform-gpu duration-[400ms] hover:scale-[1.05]  cursor-pointer  relative flex  flex-col cursor-pointer text-white mb-10 lg:mb-0 w-full lg:w-full lg:h-[515px] h-[456px]  px-[25px] lg:px-[63px] bg-proposition-gradient p-5  text-[12px] font-medium";
+    let classBlock = "transition-transform transform-gpu duration-[400ms] hover:scale-[1.05]  cursor-pointer  relative flex  flex-col cursor-pointer text-white mb-10 lg:mb-0 w-full lg:w-full lg:h-[515px] min-[2100px]:h-[555px] min-[2100px]:h-[585px] h-[456px]  px-[25px] lg:px-[63px] bg-proposition-gradient p-5  text-[12px] font-medium";
     let classButton = "  self-center box-border text-[24px] absolute left-1/2 bg-proposition-button transform translate-y-1/2 -translate-x-1/2 bottom-0 w-[112px] h-[42px] border-solid border-2 border-white flex justify-center items-center";
 
     if (isActive) {
