@@ -3326,12 +3326,48 @@ input[type="checkbox"] {
   }
 }
 
+@media (min-width: 1500px) {
+  .min-\[1500px\]\:left-\[12\%\] {
+    left: 12%;
+  }
+
+  .min-\[1500px\]\:left-\[10\%\] {
+    left: 10%;
+  }
+
+  .min-\[1500px\]\:left-\[8\%\] {
+    left: 8%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .min-\[1700px\]\:left-\[15\%\] {
+    left: 15%;
+  }
+
+  .min-\[1700px\]\:left-\[13\%\] {
+    left: 13%;
+  }
+
+  .min-\[1700px\]\:left-\[12\%\] {
+    left: 12%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .min-\[2000px\]\:left-\[18\%\] {
+    left: 18%;
+  }
+}
+
 @media (min-width: 2100px) {
   .min-\[2100px\]\:h-\[555px\] {
     height: 555px;
   }
+}
 
-  .min-\[2100px\]\:h-\[585px\] {
+@media (min-width: 2300px) {
+  .min-\[2300px\]\:h-\[585px\] {
     height: 585px;
   }
 }

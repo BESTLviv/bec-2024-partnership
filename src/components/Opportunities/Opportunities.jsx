@@ -15,7 +15,7 @@ export default function Opportunities({ isMobile }) {
     let elipse = <div className="bg-ellipse w-[590px] h-[283px] left-[60%] -top-[50%] absolute transform rotate-[-63.49deg] z-10  filter blur-[70px]"></div>
     if (!isMobile) {
         content =
-            <div className="flex">
+            <div className="flex relative min-[1500px]:left-[8%] min-[1700px]:left-[12%] min-[2000px]:left-[18%] transform ">
                 <img className="bec-image py-5" src={aboutBec} alt="" />
                 <ol className=" lg:pl-4 w-full lg:flex lg:flex-col lg:justify-start lg:items-start ">
                     {opportunities.map((opportunity, index) => <Opportunity key={index} data={opportunity}></Opportunity>)}
