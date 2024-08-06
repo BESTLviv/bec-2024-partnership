@@ -1071,6 +1071,10 @@ video {
   margin-top: 50px;
 }
 
+.mb-\[16px\] {
+  margin-bottom: 16px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1887,6 +1891,10 @@ video {
   padding-right: 35px;
 }
 
+.pt-\[0px\] {
+  padding-top: 0px;
+}
+
 .pt-\[9px\] {
   padding-top: 9px;
 }
@@ -2488,7 +2496,7 @@ video {
 }
 
 .partner__sub-title{
-  font-size: calc(20px + 12 * (100vw - 320px) / 1120);
+  font-size: calc(24px + 12 * (100vw - 320px) / 1120);
 }
 
 .partner__image{
@@ -2504,16 +2512,8 @@ video {
   margin-bottom: calc(125px + 125* (100vw - 320px) / 1120);
 }
 
-.portrait__title{
-  margin-bottom: calc(30px + 35 *  (100vw - 320px) / 1120);
-}
-
 .propositions{
   margin-bottom: calc(150px + 100* (100vw - 320px) / 1120);
-}
-
-.propositions__title{
-  margin-bottom: calc(30px + 35 *  (100vw - 320px) / 1120);
 }
 
 .sub-propositions{
@@ -2528,10 +2528,6 @@ video {
   margin-bottom: calc(150px + 100 * (100vw - 320px) / 1120);
 }
 
-.basket__title{
-  margin-bottom: calc(25px + 30 *  (100vw - 320px) / 1120);
-}
-
 .partners{
   margin-bottom: calc(150px + 100 * (100vw - 320px) / 1120);
 }
@@ -2544,21 +2540,13 @@ video {
   margin-bottom: calc(150px + 100 * (100vw - 320px) / 1120);
 }
 
-.about__title{
-  margin-bottom: calc(25px +  30*  (100vw - 320px) / 1120);
-}
-
-.contacts__title{
-  margin-bottom: calc(25px +  30*   (100vw - 320px) / 1120);
-}
-
 .statistic{
   margin-bottom: calc(150px + 120 * (100vw - 320px) / 1120);
 }
 
 .statistic__title{
   font-size: calc(24px + 12 * (100vw - 320px) / 1120);
-  margin-bottom: calc(50px * (100vw - 320px) / 1120);
+  margin-bottom: calc(16px + 34  * (100vw - 320px) / 1120);
 }
 
 .statistic__sub-title{
@@ -2603,10 +2591,6 @@ video {
 .slide__image{
   width: calc(300px + 317 * (100vw - 320px) / 1120);
   height: calc(205px + 219 * (100vw - 320px) / 1120);
-}
-
-.opportunities__title{
-  margin-bottom: calc(15px + 60 * (100vw - 320px) / 1120);
 }
 
 .statistic__titlee{
@@ -2695,10 +2679,55 @@ input[type="checkbox"] {
 .burger-links button{
   font-size: calc(16px + 4 * (100vw - 320px) / 1120);
   transition: color ease 300ms;
+  color: rgba(50, 50, 50, 1);
 }
 
 .burger-links button:hover{
-  color: white;
+  color: black;
+}
+
+.what__title{
+  margin-bottom: calc(25px + 30 * (100vw - 320px) / 1120);
+}
+
+.vs__title{
+  margin-bottom: calc(25px + 30 * (100vw - 320px) / 1120);
+}
+
+.opportunities__title{
+  margin-bottom: calc(25px + 50 * (100vw - 320px) / 1120);
+}
+
+.statistic__titlee{
+  margin-bottom: calc(25px + 30 * (100vw - 320px) / 1120);
+}
+
+.portrait__title{
+  margin-bottom: calc(25px + 30 *  (100vw - 320px) / 1120);
+}
+
+.propositions__title{
+  margin-bottom: calc(25px + 30 *  (100vw - 320px) / 1120);
+}
+
+.sub-propositions__title{
+  margin-bottom: calc(25px + 30 *  (100vw - 320px) / 1120);
+}
+
+.basket__title{
+  margin-bottom: calc(25px + 30 *  (100vw - 320px) / 1120);
+}
+
+.partners__title{
+  margin-bottom: calc(25px + 30 * (100vw - 320px) / 1120);
+}
+
+.about__title{
+  margin-bottom: calc(25px +  30 *  (100vw - 320px) / 1120);
+}
+
+.contacts__title{
+  margin-bottom: calc(25px +  30 *   (100vw - 320px) / 1120);
 }
 
 .placeholder\:text-borderButton::-moz-placeholder {
@@ -3012,6 +3041,14 @@ input[type="checkbox"] {
 
   .lg\:mr-\[46px\] {
     margin-right: 46px;
+  }
+
+  .lg\:mb-\[16px\] {
+    margin-bottom: 16px;
+  }
+
+  .lg\:mb-\[60px\] {
+    margin-bottom: 60px;
   }
 
   .lg\:flex {
@@ -3378,5 +3415,3 @@ input[type="checkbox"] {
     height: 585px;
   }
 }
-
-
